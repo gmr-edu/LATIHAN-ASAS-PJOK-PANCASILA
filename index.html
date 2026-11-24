@@ -82,56 +82,56 @@
 
   <!-- ==================== HEADER SEKOLAH (TEMA JINGGA & KUNING CERIA) ==================== -->
   <header class="bg-gradient-to-r from-orange-600 via-amber-500 to-orange-500 text-white shadow-lg border-b-4 border-yellow-300 sticky top-0 z-40">
-    <div class="max-w-7xl mx-auto px-4 py-3.5 sm:px-6 lg:px-8 flex flex-wrap items-center justify-between gap-3">
+    <div class="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8 py-3 flex flex-wrap items-center justify-between gap-2.5">
       <!-- Logo & Identitas Sekolah -->
-      <div class="flex items-center space-x-3.5">
-        <div class="w-12 h-12 sm:w-14 sm:h-14 rounded-2xl bg-yellow-300 p-1 shadow-md flex-shrink-0 animate-float">
+      <div class="flex items-center space-x-2.5 sm:space-x-3.5 min-w-0 flex-1">
+        <div class="w-11 h-11 sm:w-14 sm:h-14 rounded-2xl bg-yellow-300 p-1 shadow-md flex-shrink-0 animate-float">
           <div class="w-full h-full bg-orange-700 rounded-xl flex items-center justify-center text-yellow-300">
-            <i class="fas fa-school text-2xl sm:text-3xl"></i>
+            <i class="fas fa-school text-xl sm:text-3xl"></i>
           </div>
         </div>
-        <div>
-          <div class="flex flex-wrap items-center gap-2">
+        <div class="min-w-0">
+          <div class="flex flex-wrap items-center gap-1.5 sm:gap-2">
             <span class="px-2.5 py-0.5 text-[10px] sm:text-xs font-extrabold uppercase tracking-wider bg-yellow-300 text-orange-950 rounded-full shadow-sm">
               ⭐ CBT Kelas IV Ceria
             </span>
             <span class="hidden md:inline-block text-yellow-100 text-xs font-semibold">• Kurikulum Merdeka</span>
           </div>
-          <h1 class="text-lg sm:text-xl md:text-2xl font-bold tracking-wide uppercase text-white drop-shadow-sm mt-0.5">
+          <h1 class="text-sm sm:text-xl md:text-2xl font-bold tracking-wide uppercase text-white drop-shadow-sm mt-0.5 truncate">
             SDI HIDAYATULLAH TAMAN HUDAYA
           </h1>
-          <p id="header-subject-subtitle" class="text-xs sm:text-sm text-yellow-100 font-medium">
+          <p id="header-subject-subtitle" class="text-[11px] sm:text-sm text-yellow-100 font-medium truncate">
             Evaluasi Pembelajaran Terpadu • PJOK & Pendidikan Pancasila Kelas IV
           </p>
         </div>
       </div>
 
       <!-- Info Timer / Status saat ujian berlangsung -->
-      <div id="header-exam-info" class="hidden flex items-center space-x-3 sm:space-x-4">
-        <div class="hidden md:block text-right bg-orange-900/25 px-3.5 py-1.5 rounded-2xl border border-yellow-300/40">
-          <p class="text-[11px] text-yellow-200 font-semibold">Peserta Ujian:</p>
-          <p id="display-student-name" class="font-bold text-sm text-white"></p>
+      <div id="header-exam-info" class="hidden flex items-center space-x-2 sm:space-x-4 w-full sm:w-auto justify-between sm:justify-end">
+        <div class="md:block text-left sm:text-right bg-orange-900/25 px-3 py-1.5 rounded-2xl border border-yellow-300/40 max-w-[55%] sm:max-w-none truncate">
+          <p class="text-[10px] sm:text-[11px] text-yellow-200 font-semibold">Peserta Ujian:</p>
+          <p id="display-student-name" class="font-bold text-xs sm:text-sm text-white truncate"></p>
         </div>
-        <div id="timer-box" class="bg-orange-900/45 border-2 border-yellow-300 px-4 py-2 rounded-2xl flex items-center space-x-2.5 shadow-inner">
-          <i class="fas fa-clock text-yellow-300 text-lg animate-pulse"></i>
+        <div id="timer-box" class="bg-orange-900/45 border-2 border-yellow-300 px-3 sm:px-4 py-1.5 sm:py-2 rounded-2xl flex items-center space-x-2 shadow-inner shrink-0">
+          <i class="fas fa-clock text-yellow-300 text-base sm:text-lg animate-pulse"></i>
           <div>
-            <span class="text-[10px] uppercase tracking-wider text-yellow-200 font-bold block leading-none">Sisa Waktu</span>
-            <span id="timer-display" class="font-mono font-extrabold text-lg sm:text-xl text-yellow-300 leading-tight">120:00</span>
+            <span class="text-[9px] sm:text-[10px] uppercase tracking-wider text-yellow-200 font-bold block leading-none">Sisa Waktu</span>
+            <span id="timer-display" class="font-mono font-extrabold text-base sm:text-xl text-yellow-300 leading-tight">120:00</span>
           </div>
         </div>
       </div>
 
-      <!-- Tombol Suara & Portal Wali Kelas di halaman awal -->
-      <div id="header-login-actions" class="flex items-center gap-2.5 no-print">
+      <!-- Tombol Suara & Portal Wali Kelas / Wali Murid di halaman awal -->
+      <div id="header-login-actions" class="flex items-center gap-2 no-print shrink-0">
         <button id="btn-sound" onclick="toggleSound()" title="Suara Efek Interaktif"
-          class="bg-orange-800/40 hover:bg-orange-800/60 border border-yellow-300/60 text-yellow-100 font-bold text-xs px-3 py-2.5 rounded-xl transition flex items-center gap-1.5">
+          class="bg-orange-800/40 hover:bg-orange-800/60 border border-yellow-300/60 text-yellow-100 font-bold text-xs px-3 py-2.5 rounded-xl transition flex items-center gap-1.5 min-h-[42px]">
           <span id="sound-icon">🔊</span>
           <span id="sound-label" class="hidden sm:inline">Suara</span>
         </button>
         <button onclick="showTeacherLogin()"
-          class="bg-yellow-300 hover:bg-yellow-200 text-orange-950 font-extrabold text-xs sm:text-sm px-4 py-2.5 rounded-2xl shadow-md border-b-4 border-amber-500 transition transform hover:-translate-y-0.5 active:translate-y-0 flex items-center space-x-2">
-          <i class="fas fa-chalkboard-teacher"></i>
-          <span>Portal Wali Kelas</span>
+          class="bg-yellow-300 hover:bg-yellow-200 active:scale-95 text-orange-950 font-extrabold text-xs sm:text-sm px-3.5 sm:px-4 py-2.5 rounded-2xl shadow-md border-b-4 border-amber-500 transition flex items-center space-x-1.5 sm:space-x-2 min-h-[42px]">
+          <i class="fas fa-user-shield"></i>
+          <span>Portal Wali Murid / Guru</span>
         </button>
       </div>
     </div>
@@ -419,15 +419,15 @@
 
           <!-- Tombol Aksi -->
           <div class="pt-4 border-t-2 border-amber-100 flex flex-wrap justify-between gap-3 no-print">
-            <button onclick="backToHome()" class="px-5 py-3 rounded-2xl font-bold text-sm bg-amber-100 hover:bg-amber-200 text-orange-950 flex items-center gap-2 transition">
+            <button onclick="backToHome()" class="w-full sm:w-auto justify-center px-5 py-3 rounded-2xl font-bold text-sm bg-amber-100 hover:bg-amber-200 text-orange-950 flex items-center gap-2 transition">
               <i class="fas fa-home"></i> Kembali ke Halaman Awal
             </button>
-            <div class="flex flex-wrap gap-3">
-              <button onclick="window.print()" class="px-5 py-3 rounded-2xl font-extrabold text-sm bg-yellow-300 hover:bg-yellow-200 text-orange-950 border-b-4 border-amber-500 flex items-center gap-2 shadow">
+            <div class="flex flex-wrap gap-3 w-full sm:w-auto">
+              <button onclick="window.print()" class="flex-1 sm:flex-initial justify-center px-5 py-3 rounded-2xl font-extrabold text-sm bg-yellow-300 hover:bg-yellow-200 text-orange-950 border-b-4 border-amber-500 flex items-center gap-2 shadow">
                 <i class="fas fa-print"></i> Cetak Laporan
               </button>
-              <button onclick="showTeacherLogin()" class="px-5 py-3 rounded-2xl font-extrabold text-sm bg-orange-600 hover:bg-orange-700 text-white border-b-4 border-orange-800 flex items-center gap-2 shadow">
-                <i class="fas fa-chalkboard-teacher"></i> Rekap Wali Kelas
+              <button onclick="showTeacherLogin()" class="flex-1 sm:flex-initial justify-center px-5 py-3 rounded-2xl font-extrabold text-sm bg-orange-600 hover:bg-orange-700 text-white border-b-4 border-orange-800 flex items-center gap-2 shadow">
+                <i class="fas fa-user-shield"></i> Rekap Wali Murid / Guru
               </button>
             </div>
           </div>
@@ -435,14 +435,14 @@
       </div>
     </section>
 
-    <!-- 4. HALAMAN DASHBOARD WALI KELAS -->
+    <!-- 4. HALAMAN DASHBOARD WALI MURID / WALI KELAS -->
     <section id="view-teacher" class="hidden space-y-6 animate-fade-in">
-      <div class="bg-white rounded-[2rem] shadow-lg border-4 border-amber-200 p-6 sm:p-8 print-shadow-none">
+      <div class="bg-white rounded-[2rem] shadow-lg border-4 border-amber-200 p-5 sm:p-8 print-shadow-none">
         <div class="flex flex-wrap items-center justify-between gap-4 pb-6 border-b-2 border-amber-100">
           <div>
-            <span class="bg-yellow-200 text-orange-950 text-xs font-extrabold px-3 py-1 rounded-full">Dashboard Wali Kelas</span>
-            <h2 class="text-2xl font-bold text-orange-950 mt-1.5">Rekapitulasi Hasil Ujian Kelas IV</h2>
-            <p class="text-sm text-slate-600">SDI Hidayatullah Taman Hudaya • PJOK & Pendidikan Pancasila (40 Soal PG)</p>
+            <span class="bg-yellow-200 text-orange-950 text-xs font-extrabold px-3 py-1 rounded-full">Dashboard Wali Murid & Wali Kelas</span>
+            <h2 class="text-xl sm:text-2xl font-bold text-orange-950 mt-1.5">Rekapitulasi Hasil Ujian Kelas IV</h2>
+            <p class="text-xs sm:text-sm text-slate-600">SDI Hidayatullah Taman Hudaya • PJOK & Pendidikan Pancasila (40 Soal PG)</p>
           </div>
           <div class="flex flex-wrap gap-2 no-print">
             <button onclick="exportCSV()" class="bg-orange-600 hover:bg-orange-700 text-white text-xs sm:text-sm font-extrabold px-4 py-2.5 rounded-xl shadow flex items-center gap-2">
@@ -534,22 +534,29 @@
   </main>
 
   <!-- MODAL KUSTOM (Pengganti alert & confirm) -->
-  <div id="custom-modal" class="hidden fixed inset-0 bg-slate-900/60 backdrop-blur-sm z-50 flex items-center justify-center p-4">
-    <div class="bg-white rounded-[2rem] max-w-md w-full p-6 shadow-2xl border-4 border-amber-200 transform transition-all">
+  <div id="custom-modal" class="hidden fixed inset-0 bg-slate-900/60 backdrop-blur-sm z-50 flex items-center justify-center p-4 overflow-y-auto">
+    <div class="bg-white rounded-[2rem] max-w-md w-full p-6 shadow-2xl border-4 border-amber-200 transform transition-all my-auto">
       <div id="modal-icon" class="w-16 h-16 rounded-2xl bg-amber-100 text-orange-600 flex items-center justify-center text-2xl mx-auto mb-4">
         <i class="fas fa-exclamation-triangle"></i>
       </div>
       <h3 id="modal-title" class="text-xl font-bold text-center text-orange-950 mb-2">Konfirmasi</h3>
-      <p id="modal-message" class="text-sm text-center text-slate-600 mb-6 leading-relaxed">Pesan modal di sini.</p>
+      <p id="modal-message" class="text-sm text-center text-slate-600 mb-5 leading-relaxed">Pesan modal di sini.</p>
 
-      <!-- Input Password khusus Login Wali Kelas -->
+      <!-- Input Password khusus Login Wali Murid / Wali Kelas -->
       <div id="modal-pin-container" class="hidden mb-5">
-        <input type="password" id="teacher-pin-input" placeholder="Masukkan PIN Guru (Default: 1234)"
-          class="w-full px-4 py-3 text-center font-extrabold tracking-widest bg-amber-50 border-2 border-amber-300 rounded-2xl focus:outline-none focus:border-orange-500">
-        <p id="pin-error-msg" class="hidden text-xs text-rose-600 text-center mt-1.5 font-bold">PIN salah! Silakan coba lagi (PIN: 1234).</p>
+        <div class="relative">
+          <input type="password" id="teacher-pin-input" autocomplete="off" autocapitalize="characters"
+            placeholder="Masukkan Password Wali Murid"
+            class="w-full px-4 py-3.5 pr-12 text-center font-extrabold tracking-wider uppercase bg-amber-50 border-2 border-amber-300 rounded-2xl focus:outline-none focus:border-orange-500 text-base">
+          <button type="button" onclick="togglePasswordVisibility()" title="Tampilkan / Sembunyikan Password"
+            class="absolute inset-y-0 right-0 px-3.5 flex items-center text-orange-700 hover:text-orange-900">
+            <i id="toggle-pass-icon" class="fas fa-eye"></i>
+          </button>
+        </div>
+        <p id="pin-error-msg" class="hidden text-xs text-rose-600 text-center mt-2 font-bold">Password salah! Silakan periksa kembali password akses.</p>
       </div>
 
-      <div id="modal-buttons" class="flex gap-3 justify-center">
+      <div id="modal-buttons" class="flex flex-wrap gap-3 justify-center">
         <!-- Tombol aksi modal -->
       </div>
     </div>
@@ -978,902 +985,58 @@
 
     // =========================================================================
     // 2. BANK SOAL PENDIDIKAN PANCASILA KELAS 4 (40 SOAL PG - BAB 1 & BAB 2)
-    // =========================================================================
-    const pancasilaQuestionsBank = [
-      // --- BAB 1: TP 1.1 ---
-      {
-        id: 1, bab: "Bab 1: Mengenal Lingkungan Sekitar", tp: "TP 1.1",
-        tpDesc: "Mengidentifikasi & menghargai identitas budaya, suku, bahasa, dan agama.",
-        q: "Dalam buku Pendidikan Pancasila Kelas 4, tokoh Dewi berasal dari Jawa Timur. Nama pakaian adat dari Jawa Timur yang dikenakan Dewi adalah ....",
-        options: ["Baju Bodo", "Baju Ning", "Ulos", "King Bibinge"],
-        answer: 1
-      },
-      {
-        id: 2, bab: "Bab 1: Mengenal Lingkungan Sekitar", tp: "TP 1.1",
-        tpDesc: "Mengidentifikasi & menghargai identitas budaya, suku, bahasa, dan agama.",
-        q: "Hemalia berasal dari Provinsi Kalimantan Tengah. Suku bangsa dan bahasa daerah asal Hemalia adalah ....",
-        options: ["Suku Bugis - Bahasa Bugis", "Suku Ambon - Bahasa Ambon", "Suku Dayak - Bahasa Dayak Ngaju", "Suku Sasak - Bahasa Sasak"],
-        answer: 2
-      },
-      {
-        id: 3, bab: "Bab 1: Mengenal Lingkungan Sekitar", tp: "TP 1.1",
-        tpDesc: "Mengidentifikasi & menghargai identitas budaya, suku, bahasa, dan agama.",
-        q: "Tari Mandau merupakan tarian tradisional yang berasal dari suku Dayak di daerah ....",
-        options: ["Kalimantan Tengah", "Sulawesi Tengah", "Maluku Barat Daya", "Jawa Timur"],
-        answer: 0
-      },
-      {
-        id: 4, bab: "Bab 1: Mengenal Lingkungan Sekitar", tp: "TP 1.1",
-        tpDesc: "Mengidentifikasi & menghargai identitas budaya, suku, bahasa, dan agama.",
-        q: "Made berasal dari Provinsi Bali. Berikut ini yang merupakan tarian tradisional terkenal dari daerah asal Made adalah ....",
-        options: ["Tari Piring dan Tari Payung", "Tari Pendet, Tari Kecak, dan Tari Barong", "Tari Cakalele dan Tari Lenso", "Tari Jaipong dan Tari Merak"],
-        answer: 1
-      },
-      {
-        id: 5, bab: "Bab 1: Mengenal Lingkungan Sekitar", tp: "TP 1.1",
-        tpDesc: "Mengidentifikasi & menghargai identitas budaya, suku, bahasa, dan agama.",
-        q: "Suku Ambon dari Maluku memiliki tarian tradisional yang digunakan untuk menyambut tamu dengan iringan alat musik tifa dan suling, yaitu ....",
-        options: ["Tari Saman", "Tari Cakalele", "Tari Tor-tor", "Tari Reog"],
-        answer: 1
-      },
-      {
-        id: 6, bab: "Bab 1: Mengenal Lingkungan Sekitar", tp: "TP 1.1",
-        tpDesc: "Mengidentifikasi & menghargai identitas budaya, suku, bahasa, dan agama.",
-        q: "Tradisi Fahombo (Lompat Batu) merupakan identitas budaya masyarakat yang berasal dari daerah ....",
-        options: ["Nias, Sumatra Utara", "Bengkalis, Riau", "Cireundeu, Cimahi", "Ponorogo, Jawa Timur"],
-        answer: 0
-      },
-      {
-        id: 7, bab: "Bab 1: Mengenal Lingkungan Sekitar", tp: "TP 1.1",
-        tpDesc: "Mengidentifikasi & menghargai identitas budaya, suku, bahasa, dan agama.",
-        q: "Masyarakat Adat Cireundeu di Cimahi, Jawa Barat memiliki kearifan lokal yang unik karena makanan pokok masyarakatnya adalah ....",
-        options: ["Sagu", "Jagung", "Ketela atau singkong", "Gandum"],
-        answer: 2
-      },
-      {
-        id: 8, bab: "Bab 1: Mengenal Lingkungan Sekitar", tp: "TP 1.1",
-        tpDesc: "Mengidentifikasi & menghargai identitas budaya, suku, bahasa, dan agama.",
-        q: "Saat hari raya Lebaran, Made yang beragama Hindu mengantarkan ketupat sayur ke rumah Dewi. Sebaliknya, saat hari raya Kuningan, Dewi mengantarkan nasi kuning ke rumah Made. Sikap mereka mencerminkan ....",
-        options: ["Sikap peduli dengan perilaku berbagi makanan", "Sikap sombong memamerkan makanan", "Sikap terpaksa karena disuruh orang tua", "Sikap membeda-bedakan teman"],
-        answer: 0
-      },
-      {
-        id: 9, bab: "Bab 1: Mengenal Lingkungan Sekitar", tp: "TP 1.1",
-        tpDesc: "Mengidentifikasi & menghargai identitas budaya, suku, bahasa, dan agama.",
-        q: "Di Bali, petugas keamanan adat (Pecalang) turut membantu mengamankan pelaksanaan salat Idul Adha umat Islam agar berjalan tertib. Perilaku tersebut menunjukkan sikap ....",
-        options: ["Toleransi antarumat beragama", "Persaingan antarbudaya", "Acuh tak acuh terhadap tetangga", "Mencampuri ibadah agama lain"],
-        answer: 0
-      },
-      {
-        id: 10, bab: "Bab 1: Mengenal Lingkungan Sekitar", tp: "TP 1.1",
-        tpDesc: "Mengidentifikasi & menghargai identitas budaya, suku, bahasa, dan agama.",
-        q: "Perpaduan budaya Tionghoa dengan budaya Jawa di Kota Solo yang menjadi wujud menghargai kebinekaan masyarakat Indonesia adalah tradisi ....",
-        options: ["Tradisi Nyadran", "Grebeg Sudiro", "Sekaten", "Ngaben"],
-        answer: 1
-      },
-
-      // --- BAB 1: TP 1.2 ---
-      {
-        id: 11, bab: "Bab 1: Mengenal Lingkungan Sekitar", tp: "TP 1.2",
-        tpDesc: "Mengenal perangkat desa/kelurahan serta lingkungan alam & buatan.",
-        q: "Wilayah pemerintahan yang terdiri atas gabungan beberapa Rukun Warga (RW) atau dusun/kampung disebut ....",
-        options: ["Rukun Tetangga (RT)", "Desa atau Kelurahan", "Kecamatan", "Kabupaten"],
-        answer: 1
-      },
-      {
-        id: 12, bab: "Bab 1: Mengenal Lingkungan Sekitar", tp: "TP 1.2",
-        tpDesc: "Mengenal perangkat desa/kelurahan serta lingkungan alam & buatan.",
-        q: "Perbedaan utama antara Kepala Desa dan Lurah berdasarkan bacaan 'Berkunjung ke Kantor Desa Bineka' adalah ....",
-        options: [
-          "Kepala desa seorang PNS, sedangkan lurah dipilih langsung warga",
-          "Kepala desa dipilih langsung oleh penduduk desa, sedangkan lurah seorang PNS yang diangkat bupati/wali kota",
-          "Kepala desa bertanggung jawab kepada camat, sedangkan lurah kepada presiden",
-          "Kepala desa menjabat seumur hidup, sedangkan lurah selama 6 tahun"
-        ],
-        answer: 1
-      },
-      {
-        id: 13, bab: "Bab 1: Mengenal Lingkungan Sekitar", tp: "TP 1.2",
-        tpDesc: "Mengenal perangkat desa/kelurahan serta lingkungan alam & buatan.",
-        q: "Masa jabatan seorang Kepala Desa dalam satu periode adalah selama ....",
-        options: ["4 tahun", "5 tahun", "6 tahun", "8 tahun"],
-        answer: 2
-      },
-      {
-        id: 14, bab: "Bab 1: Mengenal Lingkungan Sekitar", tp: "TP 1.2",
-        tpDesc: "Mengenal perangkat desa/kelurahan serta lingkungan alam & buatan.",
-        q: "Dalam struktur organisasi pemerintahan desa, lembaga yang anggotanya merupakan perwakilan masyarakat setiap dusun untuk membahas peraturan desa dan mengawasi kinerja kepala desa adalah ....",
-        options: ["Kelompok Jabatan Fungsional", "Badan Permusyawaratan Desa (BPD)", "Karang Taruna", "Posyandu"],
-        answer: 1
-      },
-      {
-        id: 15, bab: "Bab 1: Mengenal Lingkungan Sekitar", tp: "TP 1.2",
-        tpDesc: "Mengenal perangkat desa/kelurahan serta lingkungan alam & buatan.",
-        q: "Perangkat desa yang bertugas membantu kepala desa dalam urusan tata usaha, keuangan, dan perencanaan adalah ....",
-        options: ["Kepala Dusun", "Sekretaris Desa", "Ketua RW", "BPD"],
-        answer: 1
-      },
-      {
-        id: 16, bab: "Bab 1: Mengenal Lingkungan Sekitar", tp: "TP 1.2",
-        tpDesc: "Mengenal perangkat desa/kelurahan serta lingkungan alam & buatan.",
-        q: "Perangkat pemerintahan berikut ini yang HANYA ada di struktur organisasi Kelurahan dan tidak ada di Desa adalah ....",
-        options: ["Sekretaris", "Kepala Seksi", "Kelompok Jabatan Fungsional", "Ketua RT"],
-        answer: 2
-      },
-      {
-        id: 17, bab: "Bab 1: Mengenal Lingkungan Sekitar", tp: "TP 1.2",
-        tpDesc: "Mengenal perangkat desa/kelurahan serta lingkungan alam & buatan.",
-        q: "Lurah merupakan perangkat kecamatan sehingga dalam menjalankan tugasnya Lurah bertanggung jawab kepada ....",
-        options: ["Camat", "Kepala Dusun", "Ketua BPD", "Ketua RW"],
-        answer: 0
-      },
-      {
-        id: 18, bab: "Bab 1: Mengenal Lingkungan Sekitar", tp: "TP 1.2",
-        tpDesc: "Mengenal perangkat desa/kelurahan serta lingkungan alam & buatan.",
-        q: "Perhatikan kenampakan lingkungan berikut:\n(1) Pegunungan\n(2) Puskesmas\n(3) Sungai\n(4) Ruang Terbuka Hijau Publik (RTHP)\nYang termasuk contoh lingkungan alam ciptaan Tuhan ditunjukkan oleh nomor ....",
-        options: ["(1) dan (2)", "(1) dan (3)", "(2) dan (4)", "(3) dan (4)"],
-        answer: 1
-      },
-      {
-        id: 19, bab: "Bab 1: Mengenal Lingkungan Sekitar", tp: "TP 1.2",
-        tpDesc: "Mengenal perangkat desa/kelurahan serta lingkungan alam & buatan.",
-        q: "Pasar tradisional, Puskesmas, sekolah, dan tempat ibadah merupakan contoh lingkungan buatan yang berfungsi sebagai ....",
-        options: ["Tempat tinggal pribadi", "Fasilitas umum bagi masyarakat", "Kawasan hutan lindung", "Tempat pembuangan sampah"],
-        answer: 1
-      },
-      {
-        id: 20, bab: "Bab 1: Mengenal Lingkungan Sekitar", tp: "TP 1.2",
-        tpDesc: "Mengenal perangkat desa/kelurahan serta lingkungan alam & buatan.",
-        q: "Dalam kegiatan 'Grebek Sampah' setelah karnaval sepeda hias di Desa Bineka, sampah sisa makanan dan dedaunan kering dimasukkan ke dalam kantong sampah ....",
-        options: ["Anorganik", "Organik", "Berbahaya (B3)", "Plastik dan kaca"],
-        answer: 1
-      },
-
-      // --- BAB 2: TP 2.1 ---
-      {
-        id: 21, bab: "Bab 2: Aku Anak yang Disiplin", tp: "TP 2.1",
-        tpDesc: "Mengidentifikasi & melaksanakan aturan di keluarga, sekolah, dan masyarakat.",
-        q: "Ketentuan yang dibuat untuk mengatur perilaku atau perbuatan manusia agar tercipta ketertiban dan keteraturan disebut ....",
-        options: ["Hadiah", "Peraturan atau aturan", "Kebiasaan bebas", "Keinginan"],
-        answer: 1
-      },
-      {
-        id: 22, bab: "Bab 2: Aku Anak yang Disiplin", tp: "TP 2.1",
-        tpDesc: "Mengidentifikasi & melaksanakan aturan di keluarga, sekolah, dan masyarakat.",
-        q: "Aturan di lingkungan keluarga biasanya bersifat tidak tertulis dan dibuat berdasarkan ....",
-        options: ["Perintah ketua RT", "Kesepakatan di antara anggota keluarga", "Undang-undang negara", "Keputusan kepala sekolah"],
-        answer: 1
-      },
-      {
-        id: 23, bab: "Bab 2: Aku Anak yang Disiplin", tp: "TP 2.1",
-        tpDesc: "Mengidentifikasi & melaksanakan aturan di keluarga, sekolah, dan masyarakat.",
-        q: "Contoh penerapan aturan yang berlaku di lingkungan rumah adalah ....",
-        options: [
-          "Memakai seragam merah putih dan topi saat upacara",
-          "Meminta izin kepada orang tua ketika hendak keluar rumah",
-          "Wajib memiliki Kartu Tanda Penduduk (KTP)",
-          "Mengambil nomor antrean sebelum diperiksa dokter"
-        ],
-        answer: 1
-      },
-      {
-        id: 24, bab: "Bab 2: Aku Anak yang Disiplin", tp: "TP 2.1",
-        tpDesc: "Mengidentifikasi & melaksanakan aturan di keluarga, sekolah, dan masyarakat.",
-        q: "Di lingkungan masyarakat, apabila ada tamu yang menginap lebih dari 1 x 24 jam, maka wajib melapor kepada ....",
-        options: ["Kepala Sekolah", "Ketua RT setempat", "Petugas Puskesmas", "Penjaga taman bermain"],
-        answer: 1
-      },
-      {
-        id: 25, bab: "Bab 2: Aku Anak yang Disiplin", tp: "TP 2.1",
-        tpDesc: "Mengidentifikasi & melaksanakan aturan di keluarga, sekolah, dan masyarakat.",
-        q: "Perhatikan pernyataan berikut:\n1. Berjalan di sebelah kiri jalan atau trotoar.\n2. Menyeberang jalan di zebra cross.\n3. Mematuhi rambu lalu lintas.\nAturan-aturan di atas berlaku ketika kita berada di ....",
-        options: ["Rumah sakit", "Jalan raya", "Tempat ibadah", "Perpustakaan sekolah"],
-        answer: 1
-      },
-      {
-        id: 26, bab: "Bab 2: Aku Anak yang Disiplin", tp: "TP 2.1",
-        tpDesc: "Mengidentifikasi & melaksanakan aturan di keluarga, sekolah, dan masyarakat.",
-        q: "Dalam cerita 'Alasan Melanggar Aturan', Dani datang terlambat dan memakai baju bebas karena seragamnya basah kehujanan dan belum kering. Sikap bijak yang dilakukan Bu Ika sebagai guru adalah ....",
-        options: [
-          "Langsung menghukum Dani berdiri di depan kelas",
-          "Menanyakan penyebab pelanggaran dengan lembut dan menasihati agar tidak terulang",
-          "Menyuruh Dani langsung pulang ke rumah",
-          "Membiarkan siswa lain mengejek Dani"
-        ],
-        answer: 1
-      },
-      {
-        id: 27, bab: "Bab 2: Aku Anak yang Disiplin", tp: "TP 2.1",
-        tpDesc: "Mengidentifikasi & melaksanakan aturan di keluarga, sekolah, dan masyarakat.",
-        q: "Berdasarkan poster Tata Tertib Kelas di SD Negeri 1 Bineka, peserta didik sebaiknya tiba di sekolah ....",
-        options: ["Tepat saat bel masuk berbunyi", "15 menit sebelum bel tanda masuk berbunyi", "Setelah pelajaran pertama selesai", "Sesuka hati masing-masing"],
-        answer: 1
-      },
-      {
-        id: 28, bab: "Bab 2: Aku Anak yang Disiplin", tp: "TP 2.1",
-        tpDesc: "Mengidentifikasi & melaksanakan aturan di keluarga, sekolah, dan masyarakat.",
-        q: "Peraturan lalu lintas merupakan contoh peraturan tertulis yang dibuat oleh pemerintah. Bagi pengendara yang melanggar peraturan lalu lintas akan dikenakan ....",
-        options: ["Pujian dari polisi", "Sanksi yang tegas seperti teguran atau denda", "Hadiah berupa helm baru", "Bebas melintas di jalan raya"],
-        answer: 1
-      },
-      {
-        id: 29, bab: "Bab 2: Aku Anak yang Disiplin", tp: "TP 2.1",
-        tpDesc: "Mengidentifikasi & melaksanakan aturan di keluarga, sekolah, dan masyarakat.",
-        q: "Saat disuruh ibu mengantarkan kue ke rumah tetangga (Bu Reni), sikap sopan yang ditunjukkan Dewi sesuai aturan bertamu adalah ....",
-        options: [
-          "Langsung masuk ke dalam rumah tanpa permisi",
-          "Berteriak memanggil dari luar pagar",
-          "Mengetuk pintu, mengucapkan salam, dan berbicara dengan ramah",
-          "Meletakkan kue di depan pintu lalu pergi"
-        ],
-        answer: 2
-      },
-      {
-        id: 30, bab: "Bab 2: Aku Anak yang Disiplin", tp: "TP 2.1",
-        tpDesc: "Mengidentifikasi & melaksanakan aturan di keluarga, sekolah, dan masyarakat.",
-        q: "Manfaat utama apabila seluruh warga mematuhi aturan yang berlaku di rumah, sekolah, maupun masyarakat adalah ....",
-        options: [
-          "Tercipta kehidupan yang aman, tertib, dan damai",
-          "Sering terjadi perselisihan antarwarga",
-          "Lingkungan menjadi kotor dan tidak teratur",
-          "Setiap orang bebas berbuat semaunya"
-        ],
-        answer: 0
-      },
-
-      // --- BAB 2: TP 2.2 ---
-      {
-        id: 31, bab: "Bab 2: Aku Anak yang Disiplin", tp: "TP 2.2",
-        tpDesc: "Mengidentifikasi & melaksanakan hak serta kewajiban di sekolah dan masyarakat.",
-        q: "Segala sesuatu yang harus diterima atau dimiliki oleh setiap manusia disebut ....",
-        options: ["Kewajiban", "Hak", "Sanksi", "Aturan"],
-        answer: 1
-      },
-      {
-        id: 32, bab: "Bab 2: Aku Anak yang Disiplin", tp: "TP 2.2",
-        tpDesc: "Mengidentifikasi & melaksanakan hak serta kewajiban di sekolah dan masyarakat.",
-        q: "Sesuatu yang harus dikerjakan dengan penuh rasa tanggung jawab disebut ....",
-        options: ["Hak", "Kewajiban", "Hadiah", "Keuntungan"],
-        answer: 1
-      },
-      {
-        id: 33, bab: "Bab 2: Aku Anak yang Disiplin", tp: "TP 2.2",
-        tpDesc: "Mengidentifikasi & melaksanakan hak serta kewajiban di sekolah dan masyarakat.",
-        q: "Pelaksanaan hak dan kewajiban dalam kehidupan sehari-hari harus dilakukan secara ....",
-        options: [
-          "Menuntut hak terlebih dahulu tanpa melakukan kewajiban",
-          "Seimbang antara melaksanakan kewajiban dan menerima hak",
-          "Melakukan kewajiban hanya jika diawasi guru",
-          "Mengutamakan hak pribadi di atas kepentingan bersama"
-        ],
-        answer: 1
-      },
-      {
-        id: 34, bab: "Bab 2: Aku Anak yang Disiplin", tp: "TP 2.2",
-        tpDesc: "Mengidentifikasi & melaksanakan hak serta kewajiban di sekolah dan masyarakat.",
-        q: "Berikut ini yang merupakan contoh HAK seorang anak di lingkungan rumah adalah ....",
-        options: [
-          "Membantu orang tua membersihkan rumah",
-          "Membereskan mainan setelah selesai bermain",
-          "Mendapatkan kasih sayang, perlindungan, dan tempat tinggal dari orang tua",
-          "Mematuhi nasihat ayah dan ibu"
-        ],
-        answer: 2
-      },
-      {
-        id: 35, bab: "Bab 2: Aku Anak yang Disiplin", tp: "TP 2.2",
-        tpDesc: "Mengidentifikasi & melaksanakan hak serta kewajiban di sekolah dan masyarakat.",
-        q: "Dalam cerita 'Menjadi Anak yang Disiplin', Made, Dani, Laros, Dewi, dan Hemalia mengikuti upacara bendera setiap hari Senin dengan tertib. Mengikuti upacara bendera merupakan kewajiban siswa sebagai wujud ....",
-        options: [
-          "Rasa takut dihukum kepala sekolah",
-          "Mencintai tanah air dan menghormati jasa para pahlawan",
-          "Ingin dipuji oleh teman-teman kelas lain",
-          "Memamerkan seragam sekolah yang baru"
-        ],
-        answer: 1
-      },
-      {
-        id: 36, bab: "Bab 2: Aku Anak yang Disiplin", tp: "TP 2.2",
-        tpDesc: "Mengidentifikasi & melaksanakan hak serta kewajiban di sekolah dan masyarakat.",
-        q: "Saat belajar di kelas, apabila ada materi pelajaran yang belum dipahami, peserta didik berhak untuk ....",
-        options: [
-          "Mengobrol dengan teman sebangku",
-          "Bertanya kepada guru dengan sopan",
-          "Tidur di meja belajar",
-          "Keluar kelas tanpa izin"
-        ],
-        answer: 1
-      },
-      {
-        id: 37, bab: "Bab 2: Aku Anak yang Disiplin", tp: "TP 2.2",
-        tpDesc: "Mengidentifikasi & melaksanakan hak serta kewajiban di sekolah dan masyarakat.",
-        q: "Agar peserta didik mendapatkan hak belajar di ruang kelas yang bersih, nyaman, dan sehat, maka kewajiban yang harus dilaksanakan adalah ....",
-        options: [
-          "Melaksanakan tugas piket kebersihan kelas setiap hari",
-          "Menunggu penjaga sekolah menyapu kelas",
-          "Menyimpan sampah di dalam laci meja",
-          "Mencorat-coret dinding kelas"
-        ],
-        answer: 0
-      },
-      {
-        id: 38, bab: "Bab 2: Aku Anak yang Disiplin", tp: "TP 2.2",
-        tpDesc: "Mengidentifikasi & melaksanakan hak serta kewajiban di sekolah dan masyarakat.",
-        q: "Ketika ada tetangga atau teman yang sedang sakit, kewajiban kita sebagai sesama anggota masyarakat adalah ....",
-        options: [
-          "Menjenguk dan mendoakan agar lekas sembuh",
-          "Membuat kegaduhan di dekat rumahnya",
-          "Membiarkannya karena bukan urusan kita",
-          "Mengajak bermain di luar rumah"
-        ],
-        answer: 0
-      },
-      {
-        id: 39, bab: "Bab 2: Aku Anak yang Disiplin", tp: "TP 2.2",
-        tpDesc: "Mengidentifikasi & melaksanakan hak serta kewajiban di sekolah dan masyarakat.",
-        q: "Berikut ini yang merupakan contoh HAK warga masyarakat di lingkungan tempat tinggal adalah ....",
-        options: [
-          "Ikut serta dalam kegiatan kerja bakti membersihkan selokan",
-          "Menjaga keamanan dan ketertiban lingkungan sekitar",
-          "Menikmati lingkungan yang bersih, aman, dan nyaman",
-          "Membuang sampah pada tempatnya"
-        ],
-        answer: 2
-      },
-      {
-        id: 40, bab: "Bab 2: Aku Anak yang Disiplin", tp: "TP 2.2",
-        tpDesc: "Mengidentifikasi & melaksanakan hak serta kewajiban di sekolah dan masyarakat.",
-        q: "Akibat yang akan terjadi apabila setiap orang hanya menuntut haknya tanpa mau melaksanakan kewajibannya di masyarakat adalah ....",
-        options: [
-          "Tercipta kerukunan dan kedamaian antarwarga",
-          "Timbul perselisihan dan terganggunya ketertiban umum",
-          "Semua pekerjaan warga menjadi lebih cepat selesai",
-          "Lingkungan menjadi semakin bersih dan indah"
-        ],
-        answer: 1
-      }
-    ];
-
-    // =========================================================================
-    // 3. KONFIGURASI MATA PELAJARAN & DAFTAR 28 NAMA SISWA RESMI
-    // =========================================================================
-    const SUBJECTS_CONFIG = {
-      PJOK: {
-        code: 'PJOK',
-        name: 'PJOK Kelas 4',
-        icon: '⚽',
-        materiLabel: 'Bab 1 – Bab 3',
-        tpTitle: 'Cakupan Tujuan Pembelajaran (TP) PJOK:',
-        tpBullets: [
-          '<strong>Bab 1 (Ayo, Bergerak!):</strong> Variasi & kombinasi gerak dasar lokomotor, nonlokomotor, dan manipulatif.',
-          '<strong>Bab 2 (Ayo, Bermain!):</strong> Penerapan gerak dasar dalam permainan invasi, permainan net, dan permainan lapangan.',
-          '<strong>Bab 3 (Ayo, Merangkai Gerak!):</strong> Pola gerak dominan bertumpu, keseimbangan, bergantung, berputar, dan rangkaian senam lantai.'
-        ],
-        questions: pjokQuestionsBank
-      },
-      PANCASILA: {
-        code: 'PANCASILA',
-        name: 'Pendidikan Pancasila',
-        icon: '🦅',
-        materiLabel: 'Bab 1 & Bab 2',
-        tpTitle: 'Cakupan Tujuan Pembelajaran (TP) Pendidikan Pancasila:',
-        tpBullets: [
-          '<strong>TP 1.1:</strong> Mengidentifikasi & menghargai identitas budaya, suku, bahasa, dan agama.',
-          '<strong>TP 1.2:</strong> Mengenal perangkat desa/kelurahan serta lingkungan alam & buatan di NKRI.',
-          '<strong>TP 2.1:</strong> Mengidentifikasi & melaksanakan aturan di lingkungan keluarga, sekolah, dan masyarakat.',
-          '<strong>TP 2.2:</strong> Mengidentifikasi dan melaksanakan hak serta kewajiban sebagai warga sekolah & masyarakat.'
-        ],
-        questions: pancasilaQuestionsBank
-      }
-    };
-
-    const allowedStudents = [
-      "Arsyila Romeesa Farzana",
-      "Khanza Azkiya",
-      "Nur Amira Najmi",
-      "Maulida Fitria",
-      "Muhammad Abidzar Alghifari",
-      "Muhammad Aliff Ali",
-      "Muhammad Arya",
-      "Muhammad Ashim",
-      "Muhammad Husin Al Ghojali",
-      "Muhammad Nauval Setiawan",
-      "Muhammad Nizam Akbar",
-      "Muhammad Rezky Firdaus",
-      "Muhammad Risky",
-      "Muhammad Wafi",
-      "Novita Syaifi",
-      "Nur Asyifa",
-      "Purnama Inayah",
-      "Sa'da Alifa",
-      "Siti Fatimah",
-      "Syarifah Haibatul Azizah",
-      "Ulvi Aidi Ariani",
-      "Uswatun Hasanah",
-      "Vanya Nazila",
-      "Ikhwan Faris",
-      "Ibrahim Amjad Assegaf",
-      "Fadhil Abbas",
-      "Naina Faira",
-      "Ahmad Rizkianor"
-    ];
-
-    // --- STATE APLIKASI ---
-    let selectedSubjectKey = 'PJOK';
-    let questionsBank = SUBJECTS_CONFIG.PJOK.questions;
-    let currentUser = null;
-    let currentQuestionIndex = 0;
-    let userAnswers = new Array(questionsBank.length).fill(null);
-    let flaggedQuestions = new Array(questionsBank.length).fill(false);
-    let timerInterval = null;
-    let totalSeconds = 120 * 60; // 120 Menit = 7200 detik
-    let studentReports = [];
-    let teacherSubjectFilter = 'ALL';
-    let soundEnabled = true;
-    let audioCtx = null;
-
-    // --- AUDIO INTERAKTIF RAMAH ANAK ---
-    function playTone(freq, type = 'sine', duration = 0.08, vol = 0.07) {
-      if (!soundEnabled) return;
-      try {
-        if (!audioCtx) {
-          const AudioContext = window.AudioContext || window.webkitAudioContext;
-          audioCtx = new AudioContext();
-        }
-        if (audioCtx.state === 'suspended') audioCtx.resume();
-        const osc = audioCtx.createOscillator();
-        const gain = audioCtx.createGain();
-        osc.type = type;
-        osc.frequency.setValueAtTime(freq, audioCtx.currentTime);
-        gain.gain.setValueAtTime(vol, audioCtx.currentTime);
-        gain.gain.exponentialRampToValueAtTime(0.001, audioCtx.currentTime + duration);
-        osc.connect(gain);
-        gain.connect(audioCtx.destination);
-        osc.start();
-        osc.stop(audioCtx.currentTime + duration);
-      } catch (e) {}
-    }
-
-    function toggleSound() {
-      soundEnabled = !soundEnabled;
-      document.getElementById('sound-icon').textContent = soundEnabled ? '🔊' : '🔇';
-      document.getElementById('sound-label').textContent = soundEnabled ? 'Suara' : 'Mati';
-      if (soundEnabled) playTone(580, 'sine', 0.07);
-    }
-
-    // Inisialisasi saat halaman dimuat
-    window.addEventListener('DOMContentLoaded', () => {
-      const dataList = document.getElementById('registered-students-list');
-      allowedStudents.forEach(name => {
-        const option = document.createElement('option');
-        option.value = name;
-        dataList.appendChild(option);
-      });
-      selectSubject('PJOK', false);
-    });
-
-    // --- PILIH MATA PELAJARAN ---
-    function selectSubject(subjectKey, playAudio = true) {
-      if (playAudio) playTone(640, 'triangle', 0.08);
-      selectedSubjectKey = subjectKey;
-      const cfg = SUBJECTS_CONFIG[subjectKey];
-      questionsBank = cfg.questions;
-
-      const btnPjok = document.getElementById('select-subj-pjok');
-      const btnPancasila = document.getElementById('select-subj-pancasila');
-
-      if (subjectKey === 'PJOK') {
-        btnPjok.className = 'p-4 rounded-2xl border-4 border-orange-500 bg-gradient-to-br from-orange-50 to-amber-100 text-left transition transform hover:scale-[1.01] shadow-md flex items-center gap-3.5';
-        btnPjok.querySelector('span').textContent = 'Dipilih';
-        btnPjok.querySelector('span').className = 'inline-block text-[10px] font-extrabold uppercase px-2 py-0.5 rounded-full bg-orange-500 text-white';
-
-        btnPancasila.className = 'p-4 rounded-2xl border-2 border-amber-200 hover:border-orange-400 bg-amber-50/40 text-left transition transform hover:scale-[1.01] flex items-center gap-3.5';
-        btnPancasila.querySelector('span').textContent = 'Klik Pilih';
-        btnPancasila.querySelector('span').className = 'inline-block text-[10px] font-bold uppercase px-2 py-0.5 rounded-full bg-amber-200 text-orange-900';
-      } else {
-        btnPancasila.className = 'p-4 rounded-2xl border-4 border-orange-500 bg-gradient-to-br from-orange-50 to-amber-100 text-left transition transform hover:scale-[1.01] shadow-md flex items-center gap-3.5';
-        btnPancasila.querySelector('span').textContent = 'Dipilih';
-        btnPancasila.querySelector('span').className = 'inline-block text-[10px] font-extrabold uppercase px-2 py-0.5 rounded-full bg-orange-500 text-white';
-
-        btnPjok.className = 'p-4 rounded-2xl border-2 border-amber-200 hover:border-orange-400 bg-amber-50/40 text-left transition transform hover:scale-[1.01] flex items-center gap-3.5';
-        btnPjok.querySelector('span').textContent = 'Klik Pilih';
-        btnPjok.querySelector('span').className = 'inline-block text-[10px] font-bold uppercase px-2 py-0.5 rounded-full bg-amber-200 text-orange-900';
-      }
-
-      document.getElementById('info-materi-uji').textContent = cfg.materiLabel;
-      document.getElementById('tp-box-title').textContent = cfg.tpTitle;
-      document.getElementById('tp-box-list').innerHTML = cfg.tpBullets.map(item => `<li>${item}</li>`).join('');
-      document.getElementById('btn-start-label').textContent = `Mulai Ujian ${cfg.name} (120 Menit)`;
-    }
-
-    // --- FUNGSI NAVIGASI HALAMAN ---
-    function switchView(viewId) {
-      ['view-login', 'view-exam', 'view-result', 'view-teacher'].forEach(id => {
-        document.getElementById(id).classList.add('hidden');
-      });
-      document.getElementById(viewId).classList.remove('hidden');
-
-      if (viewId === 'view-exam') {
-        document.getElementById('header-exam-info').classList.remove('hidden');
-        document.getElementById('header-login-actions').classList.add('hidden');
-      } else {
-        document.getElementById('header-exam-info').classList.add('hidden');
-        document.getElementById('header-login-actions').classList.remove('hidden');
-      }
-      window.scrollTo({ top: 0, behavior: 'smooth' });
-    }
-
-    // --- MEMULAI UJIAN ---
-    function startExam(e) {
-      e.preventDefault();
-      const rawInput = document.getElementById('student-name').value.trim().replace(/\s+/g, ' ');
-      if (!rawInput) return;
-
-      const matchedName = allowedStudents.find(
-        student => student.toLowerCase() === rawInput.toLowerCase()
-      );
-
-      if (!matchedName) {
-        openModal({
-          title: 'Nama Tidak Terdaftar!',
-          message: `Maaf, nama <strong>"${rawInput}"</strong> tidak ditemukan dalam daftar peserta ujian Kelas IV.<br><br>Pastikan penulisan nama lengkap sudah sesuai dengan daftar siswa kelas.`,
-          icon: 'fa-user-times',
-          iconBg: 'bg-rose-100 text-rose-600',
-          buttons: [
-            { text: 'Perbaiki Nama', class: 'bg-orange-600 hover:bg-orange-700 text-white', onClick: closeModal }
-          ]
-        });
-        return;
-      }
-
-      const cfg = SUBJECTS_CONFIG[selectedSubjectKey];
-      questionsBank = cfg.questions;
-
-      currentUser = {
-        name: matchedName,
-        studentClass: "Kelas 4",
-        subjectKey: cfg.code,
-        subjectName: cfg.name,
-        subjectIcon: cfg.icon
-      };
-
-      currentQuestionIndex = 0;
-      userAnswers = new Array(questionsBank.length).fill(null);
-      flaggedQuestions = new Array(questionsBank.length).fill(false);
-      totalSeconds = 120 * 60;
-
-      document.getElementById('display-student-name').textContent = `${currentUser.name} • ${currentUser.subjectName}`;
-      document.getElementById('header-subject-subtitle').textContent = `Sedang Berlangsung: Ujian ${currentUser.subjectName} • Kelas IV`;
-
-      playTone(523.25, 'sine', 0.1);
-      setTimeout(() => playTone(659.25, 'sine', 0.12), 100);
-
-      switchView('view-exam');
-      renderQuestionGrid();
-      loadQuestion(0);
-      startTimer();
-    }
-
-    // --- PENGHITUNG WAKTU 120 MENIT ---
-    function startTimer() {
-      clearInterval(timerInterval);
-      updateTimerDisplay();
-
-      timerInterval = setInterval(() => {
-        totalSeconds--;
-        updateTimerDisplay();
-
-        if (totalSeconds <= 0) {
-          clearInterval(timerInterval);
-          finishExam(true);
-        }
-      }, 1000);
-    }
-
-    function updateTimerDisplay() {
-      const mins = Math.floor(totalSeconds / 60);
-      const secs = totalSeconds % 60;
-      const formatted = `${String(mins).padStart(2, '0')}:${String(secs).padStart(2, '0')}`;
-      const timerEl = document.getElementById('timer-display');
-      timerEl.textContent = formatted;
-
-      if (totalSeconds < 300) {
-        timerEl.classList.remove('text-yellow-300');
-        timerEl.classList.add('text-rose-200');
-      } else {
-        timerEl.classList.add('text-yellow-300');
-        timerEl.classList.remove('text-rose-200');
-      }
-    }
-
-    // --- MERENDER SOAL & NAVIGASI ---
-    function loadQuestion(index) {
-      currentQuestionIndex = index;
-      const qObj = questionsBank[index];
-
-      document.getElementById('current-q-num').textContent = index + 1;
-      document.getElementById('current-q-bab').textContent = qObj.bab;
-      document.getElementById('current-q-tp').textContent = `${qObj.tp}: ${qObj.tpDesc}`;
-      document.getElementById('question-text').innerText = qObj.q;
-
-      const optionsContainer = document.getElementById('options-container');
-      optionsContainer.innerHTML = '';
-      const letters = ['A', 'B', 'C', 'D'];
-
-      qObj.options.forEach((optText, optIdx) => {
-        const isSelected = userAnswers[index] === optIdx;
-        const btn = document.createElement('button');
-        btn.type = 'button';
-        btn.onclick = () => selectAnswer(optIdx);
-        btn.className = `w-full text-left p-4 rounded-2xl border-2 transition flex items-start space-x-3.5 ${
-          isSelected
-            ? 'border-orange-500 bg-gradient-to-r from-amber-100/90 to-yellow-50 shadow-sm'
-            : 'border-amber-200/80 hover:border-orange-400 hover:bg-amber-50/50 bg-white'
-        }`;
-
-        btn.innerHTML = `
-          <span class="w-8 h-8 rounded-xl flex items-center justify-center font-extrabold text-sm shrink-0 transition ${
-            isSelected ? 'bg-orange-500 text-white shadow-sm' : 'bg-amber-100 text-orange-900'
-          }">
-            ${letters[optIdx]}
-          </span>
-          <span class="text-sm sm:text-base font-semibold text-slate-800 pt-1 leading-snug">${optText}</span>
-        `;
-        optionsContainer.appendChild(btn);
-      });
-
-      document.getElementById('btn-prev').disabled = index === 0;
-      const nextBtn = document.getElementById('btn-next');
-      if (index === questionsBank.length - 1) {
-        nextBtn.innerHTML = `<span>Selesai</span> <i class="fas fa-check-circle"></i>`;
-        nextBtn.onclick = confirmFinishExam;
-        nextBtn.className = 'px-6 py-3 rounded-2xl font-extrabold text-sm bg-amber-500 hover:bg-amber-600 text-white border-b-4 border-amber-700 shadow-md flex items-center space-x-2 transition';
-      } else {
-        nextBtn.innerHTML = `<span>Selanjutnya</span> <i class="fas fa-chevron-right"></i>`;
-        nextBtn.onclick = nextQuestion;
-        nextBtn.className = 'px-6 py-3 rounded-2xl font-extrabold text-sm bg-orange-500 hover:bg-orange-600 text-white border-b-4 border-orange-700 shadow-md flex items-center space-x-2 transition';
-      }
-
-      document.getElementById('flag-text').textContent = flaggedQuestions[index] ? 'Batal Ragu-ragu' : 'Ragu-ragu';
-      renderQuestionGrid();
-    }
-
-    function selectAnswer(optIdx) {
-      playTone(680, 'triangle', 0.07);
-      userAnswers[currentQuestionIndex] = optIdx;
-      loadQuestion(currentQuestionIndex);
-      updateAnsweredCount();
-    }
-
-    function toggleFlag() {
-      playTone(500, 'sine', 0.06);
-      flaggedQuestions[currentQuestionIndex] = !flaggedQuestions[currentQuestionIndex];
-      loadQuestion(currentQuestionIndex);
-    }
-
-    function prevQuestion() {
-      if (currentQuestionIndex > 0) {
-        playTone(460, 'sine', 0.05);
-        loadQuestion(currentQuestionIndex - 1);
-      }
-    }
-
-    function nextQuestion() {
-      if (currentQuestionIndex < questionsBank.length - 1) {
-        playTone(540, 'sine', 0.05);
-        loadQuestion(currentQuestionIndex + 1);
-      }
-    }
-
-    function updateAnsweredCount() {
-      const count = userAnswers.filter(a => a !== null).length;
-      document.getElementById('answered-count').textContent = `${count} / ${questionsBank.length} Dijawab`;
-    }
-
-    function renderQuestionGrid() {
-      const grid = document.getElementById('question-grid');
-      grid.innerHTML = '';
-
-      questionsBank.forEach((_, idx) => {
-        const btn = document.createElement('button');
-        btn.type = 'button';
-        btn.textContent = idx + 1;
-        btn.onclick = () => { playTone(520, 'sine', 0.05); loadQuestion(idx); };
-
-        let styleClass = 'bg-amber-50 text-slate-700 border-amber-200 hover:bg-amber-100';
-        if (flaggedQuestions[idx]) {
-          styleClass = 'bg-yellow-300 text-orange-950 border-amber-500 font-extrabold';
-        } else if (userAnswers[idx] !== null) {
-          styleClass = 'bg-orange-500 text-white border-orange-600 font-extrabold';
-        }
-
-        if (idx === currentQuestionIndex) {
-          styleClass += ' ring-2 ring-offset-1 ring-orange-800 scale-105';
-        }
-
-        btn.className = `h-9 rounded-xl border-2 text-xs transition flex items-center justify-center ${styleClass}`;
-        grid.appendChild(btn);
-      });
-      updateAnsweredCount();
-    }
-
-    // --- SELESAI UJIAN & PENILAIAN (RUMUS TETAP SAMA PERSIS) ---
-    function confirmFinishExam() {
-      const unanswered = userAnswers.filter(a => a === null).length;
-      const msg = unanswered > 0
-        ? `Masih ada <strong>${unanswered} soal</strong> yang belum kamu jawab. Apakah kamu yakin ingin mengumpulkan ujian sekarang?`
-        : `Semua 40 soal sudah terjawab! Apakah kamu yakin ingin mengakhiri ujian dan melihat hasil nilaimu?`;
-
-      openModal({
-        title: 'Kumpulkan Jawaban Ujian?',
-        message: msg,
-        icon: 'fa-paper-plane',
-        iconBg: 'bg-amber-100 text-orange-600',
-        buttons: [
-          { text: 'Batal, Cek Lagi', class: 'bg-amber-100 hover:bg-amber-200 text-orange-950', onClick: closeModal },
-          { text: 'Ya, Kumpulkan!', class: 'bg-orange-600 hover:bg-orange-700 text-white', onClick: () => { closeModal(); finishExam(false); } }
-        ]
-      });
-    }
-
-    function finishExam(isTimeout) {
-      clearInterval(timerInterval);
-
-      // Rumus Durasi Pengerjaan
-      const elapsedSeconds = (120 * 60) - totalSeconds;
-      const minsTaken = Math.floor(elapsedSeconds / 60);
-      const secsTaken = elapsedSeconds % 60;
-      const durationStr = `${minsTaken} Menit ${secsTaken} Detik`;
-
-      // Rumus Skor Total & Per TP (Dinamis mengikuti TP pada mapel aktif)
-      let correctCount = 0;
-      const tpScores = {};
-      const tpTotals = {};
-
-      questionsBank.forEach((q, idx) => {
-        tpTotals[q.tp] = (tpTotals[q.tp] || 0) + 1;
-        if (tpScores[q.tp] === undefined) tpScores[q.tp] = 0;
-
-        if (userAnswers[idx] === q.answer) {
-          correctCount++;
-          tpScores[q.tp]++;
-        }
-      });
-
-      const wrongCount = questionsBank.length - correctCount;
-      const finalScore = Math.round((correctCount / questionsBank.length) * 100);
-
-      const now = new Date();
-      const dateStr = now.toLocaleDateString('id-ID', { day: '2-digit', month: 'short', year: 'numeric' }) +
-                      ', ' + now.toLocaleTimeString('id-ID', { hour: '2-digit', minute: '2-digit' });
-
-      const reportData = {
-        id: 'student-' + Date.now(),
-        name: currentUser.name,
-        studentClass: currentUser.studentClass,
-        subjectKey: currentUser.subjectKey,
-        subjectName: currentUser.subjectName,
-        subjectIcon: currentUser.subjectIcon,
-        date: dateStr,
-        duration: durationStr,
-        correct: correctCount,
-        wrong: wrongCount,
-        score: finalScore,
-        tpScores: tpScores,
-        tpTotals: tpTotals,
-        answers: [...userAnswers],
-        questionsSnapshot: [...questionsBank]
-      };
-
-      studentReports.unshift(reportData);
-
-      playTone(523.25, 'sine', 0.12);
-      setTimeout(() => playTone(659.25, 'sine', 0.12), 110);
-      setTimeout(() => playTone(783.99, 'sine', 0.22), 220);
-
-      renderStudentResult(reportData);
-      switchView('view-result');
-
-      if (isTimeout) {
-        openModal({
-          title: 'Waktu Ujian Habis!',
-          message: 'Waktu pengerjaan 120 menit telah berakhir. Jawabanmu telah otomatis tersimpan dan dinilai.',
-          icon: 'fa-clock',
-          iconBg: 'bg-amber-100 text-orange-600',
-          buttons: [{ text: 'Lihat Hasil Nilai', class: 'bg-orange-600 text-white', onClick: closeModal }]
-        });
-      }
-    }
-
-    function renderStudentResult(data) {
-      document.getElementById('res-subject-title').textContent = `Mata Pelajaran: ${data.subjectName} • Kelas IV`;
-      document.getElementById('res-name').textContent = data.name;
-      document.getElementById('res-class').textContent = data.studentClass;
-      document.getElementById('res-duration').textContent = data.duration;
-      document.getElementById('res-date').textContent = data.date;
-      document.getElementById('res-score').textContent = data.score;
-      document.getElementById('res-correct').textContent = data.correct;
-      document.getElementById('res-wrong').textContent = data.wrong;
-
-      const predEl = document.getElementById('res-predicate');
-      if (data.score >= 90) {
-        predEl.textContent = 'Sangat Baik (Mumtaz) 🌟';
-        predEl.className = 'text-xs font-extrabold px-3 py-1 rounded-full inline-block bg-orange-500 text-white';
-      } else if (data.score >= 75) {
-        predEl.textContent = 'Baik (Tuntas KKM) 👍';
-        predEl.className = 'text-xs font-extrabold px-3 py-1 rounded-full inline-block bg-amber-500 text-white';
-      } else {
-        predEl.textContent = 'Perlu Bimbingan 💪';
-        predEl.className = 'text-xs font-extrabold px-3 py-1 rounded-full inline-block bg-yellow-300 text-orange-950';
-      }
-
-      // Breakdown Per TP (Dinamis sesuai mapel yang dikerjakan)
-      const tpMap = {};
-      data.questionsSnapshot.forEach(q => {
-        if (!tpMap[q.tp]) {
-          tpMap[q.tp] = { code: q.tp, title: `${q.bab} - ${q.tpDesc}` };
-        }
-      });
-
-      const breakdownEl = document.getElementById('res-tp-breakdown');
-      breakdownEl.innerHTML = '';
-
-      Object.values(tpMap).forEach(tp => {
-        const correctInTp = data.tpScores[tp.code] || 0;
-        const totalInTp = data.tpTotals[tp.code] || 1;
-        const pct = Math.round((correctInTp / totalInTp) * 100);
-        const statusBadge = pct >= 75
-          ? `<span class="text-xs font-extrabold text-orange-900 bg-yellow-300 px-2.5 py-0.5 rounded-full">Tuntas (${pct}%)</span>`
-          : `<span class="text-xs font-bold text-amber-900 bg-amber-100 px-2.5 py-0.5 rounded-full">Perlu Penguatan (${pct}%)</span>`;
-
-        breakdownEl.innerHTML += `
-          <div class="bg-amber-50/60 p-3.5 rounded-2xl border-2 border-amber-200">
-            <div class="flex flex-wrap items-center justify-between gap-2 mb-1.5">
-              <span class="font-bold text-xs sm:text-sm text-slate-800">${tp.code}: ${tp.title}</span>
-              ${statusBadge}
-            </div>
-            <div class="w-full bg-amber-200/70 h-3 rounded-full overflow-hidden">
-              <div class="bg-gradient-to-r from-orange-500 to-amber-500 h-full rounded-full transition-all duration-500" style="width: ${pct}%"></div>
-            </div>
-            <div class="text-[11px] font-semibold text-orange-900/80 mt-1">Benar ${correctInTp} dari ${totalInTp} soal</div>
-          </div>
-        `;
-      });
-    }
-
+// ... existing code ... -->
     function backToHome() {
       document.getElementById('student-name').value = '';
       document.getElementById('header-subject-subtitle').textContent = 'Evaluasi Pembelajaran Terpadu • PJOK & Pendidikan Pancasila Kelas IV';
       switchView('view-login');
     }
 
-    // --- PORTAL WALI KELAS ---
+    // --- PORTAL WALI MURID / WALI KELAS ---
     function showTeacherLogin() {
-      document.getElementById('teacher-pin-input').value = '';
+      const pinInput = document.getElementById('teacher-pin-input');
+      pinInput.value = '';
+      pinInput.type = 'password';
+      document.getElementById('toggle-pass-icon').className = 'fas fa-eye';
       document.getElementById('pin-error-msg').classList.add('hidden');
       document.getElementById('modal-pin-container').classList.remove('hidden');
 
       openModal({
-        title: 'Akses Wali Kelas',
-        message: 'Masukkan PIN Wali Kelas SDI Hidayatullah Taman Hudaya untuk melihat laporan nilai siswa.',
+        title: 'Akses Wali Murid & Wali Kelas',
+        message: 'Masukkan password untuk membuka halaman laporan hasil ujian siswa Kelas IV SDI Hidayatullah Taman Hudaya.',
         icon: 'fa-lock',
         iconBg: 'bg-amber-100 text-orange-600',
         buttons: [
-          { text: 'Batal', class: 'bg-amber-100 hover:bg-amber-200 text-orange-950', onClick: closeModal },
-          { text: 'Masuk Portal', class: 'bg-orange-600 hover:bg-orange-700 text-white', onClick: verifyTeacherPin }
+          { text: 'Batal', class: 'flex-1 sm:flex-initial bg-amber-100 hover:bg-amber-200 text-orange-950 min-h-[44px]', onClick: closeModal },
+          { text: 'Masuk Portal', class: 'flex-1 sm:flex-initial bg-orange-600 hover:bg-orange-700 text-white min-h-[44px]', onClick: verifyTeacherPin }
         ]
       });
 
-      setTimeout(() => document.getElementById('teacher-pin-input').focus(), 100);
+      setTimeout(() => pinInput.focus(), 120);
+    }
+
+    function togglePasswordVisibility() {
+      const pinInput = document.getElementById('teacher-pin-input');
+      const icon = document.getElementById('toggle-pass-icon');
+      if (pinInput.type === 'password') {
+        pinInput.type = 'text';
+        icon.className = 'fas fa-eye-slash';
+      } else {
+        pinInput.type = 'password';
+        icon.className = 'fas fa-eye';
+      }
     }
 
     function verifyTeacherPin() {
-      const pin = document.getElementById('teacher-pin-input').value;
-      if (pin === '1234') {
+      const rawPin = document.getElementById('teacher-pin-input').value.trim().replace(/\s+/g, ' ').toUpperCase();
+      if (rawPin === 'SDI 1028' || rawPin === 'SDI1028') {
+        playTone(523.25, 'sine', 0.1);
+        setTimeout(() => playTone(659.25, 'sine', 0.12), 100);
         closeModal();
         renderTeacherDashboard();
         switchView('view-teacher');
       } else {
+        playTone(220, 'sawtooth', 0.14);
         document.getElementById('pin-error-msg').classList.remove('hidden');
       }
     }
