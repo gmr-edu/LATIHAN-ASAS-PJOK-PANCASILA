@@ -993,6 +993,44 @@
     }
 
     // --- PORTAL WALI MURID / WALI KELAS ---
+    let isSoundEnabled = true;
+    let sharedAudioCtx = null;
+
+    function playTone(freq, type = 'sine', duration = 0.1, volume = 0.08) {
+      if (!isSoundEnabled) return;
+      try {
+        if (!sharedAudioCtx) {
+          const AudioContextClass = window.AudioContext || window.webkitAudioContext;
+          if (!AudioContextClass) return;
+          sharedAudioCtx = new AudioContextClass();
+        }
+        if (sharedAudioCtx.state === 'suspended') {
+          sharedAudioCtx.resume();
+        }
+        const osc = sharedAudioCtx.createOscillator();
+        const gain = sharedAudioCtx.createGain();
+        osc.type = type;
+        osc.frequency.setValueAtTime(freq, sharedAudioCtx.currentTime);
+        gain.gain.setValueAtTime(volume, sharedAudioCtx.currentTime);
+        gain.gain.exponentialRampToValueAtTime(0.001, sharedAudioCtx.currentTime + duration);
+        osc.connect(gain);
+        gain.connect(sharedAudioCtx.destination);
+        osc.start();
+        osc.stop(sharedAudioCtx.currentTime + duration);
+      } catch (e) {
+        // Abaikan jika browser membatasi audio otomatis
+      }
+    }
+
+    function toggleSound() {
+      isSoundEnabled = !isSoundEnabled;
+      const iconEl = document.getElementById('sound-icon');
+      const labelEl = document.getElementById('sound-label');
+      if (iconEl) iconEl.textContent = isSoundEnabled ? '🔊' : '🔇';
+      if (labelEl) labelEl.textContent = isSoundEnabled ? 'Suara' : 'Mati';
+      if (isSoundEnabled) playTone(523.25, 'sine', 0.08);
+    }
+
     function showTeacherLogin() {
       const pinInput = document.getElementById('teacher-pin-input');
       pinInput.value = '';
