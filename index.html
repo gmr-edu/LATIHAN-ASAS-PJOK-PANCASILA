@@ -985,7 +985,863 @@
 
     // =========================================================================
     // 2. BANK SOAL PENDIDIKAN PANCASILA KELAS 4 (40 SOAL PG - BAB 1 & BAB 2)
-// ... existing code ... -->
+    // =========================================================================
+    const pancasilaQuestionsBank = [
+      // BAB 1: PANCASILA SEBAGAI NILAI KEHIDUPAN (20 SOAL)
+      {
+        id: 1, bab: "Bab 1: Pancasila sebagai Nilai Kehidupan", tp: "TP 1.1",
+        tpDesc: "Memahami makna dan sejarah perumusan nilai-nilai Pancasila.",
+        q: "Dasar negara Republik Indonesia yang menjadi pedoman hidup seluruh rakyat Indonesia adalah...",
+        options: ["Pancasila", "Bhinneka Tunggal Ika", "Sumpah Pemuda", "Proklamasi"],
+        answer: 0
+      },
+      {
+        id: 2, bab: "Bab 1: Pancasila sebagai Nilai Kehidupan", tp: "TP 1.1",
+        tpDesc: "Memahami makna dan sejarah perumusan nilai-nilai Pancasila.",
+        q: "Lambang negara Indonesia yang di dadanya terdapat perisai berisi lima simbol sila Pancasila adalah...",
+        options: ["Burung Merpati", "Garuda Pancasila", "Burung Cenderawasih", "Elang Jawa"],
+        answer: 1
+      },
+      {
+        id: 3, bab: "Bab 1: Pancasila sebagai Nilai Kehidupan", tp: "TP 1.1",
+        tpDesc: "Memahami makna dan sejarah perumusan nilai-nilai Pancasila.",
+        q: "Hari lahirnya Pancasila diperingati oleh bangsa Indonesia setiap tanggal...",
+        options: ["17 Agustus", "28 Oktober", "1 Juni", "10 November"],
+        answer: 2
+      },
+      {
+        id: 4, bab: "Bab 1: Pancasila sebagai Nilai Kehidupan", tp: "TP 1.1",
+        tpDesc: "Memahami makna dan sejarah perumusan nilai-nilai Pancasila.",
+        q: "Tokoh perumus dasar negara yang menyampaikan pidato usulan lima asas pada tanggal 1 Juni 1945 adalah...",
+        options: ["Ir. Soekarno", "Drs. Mohammad Hatta", "Ki Hajar Dewantara", "Jenderal Soedirman"],
+        answer: 0
+      },
+      {
+        id: 5, bab: "Bab 1: Pancasila sebagai Nilai Kehidupan", tp: "TP 1.1",
+        tpDesc: "Memahami makna dan sejarah perumusan nilai-nilai Pancasila.",
+        q: "Semboyan bangsa Indonesia yang tertulis pada pita yang dicengkeram kaki Garuda Pancasila adalah...",
+        options: ["Tut Wuri Handayani", "Bhinneka Tunggal Ika", "Merdeka atau Mati", "Bersatu Kita Teguh"],
+        answer: 1
+      },
+      {
+        id: 6, bab: "Bab 1: Pancasila sebagai Nilai Kehidupan", tp: "TP 1.2",
+        tpDesc: "Mengidentifikasi simbol dan makna sila pertama serta sila kedua Pancasila.",
+        q: "Simbol sila pertama Pancasila yang berbunyi 'Ketuhanan Yang Maha Esa' adalah...",
+        options: ["Rantai Emas", "Pohon Beringin", "Bintang Tunggal", "Kepala Banteng"],
+        answer: 2
+      },
+      {
+        id: 7, bab: "Bab 1: Pancasila sebagai Nilai Kehidupan", tp: "TP 1.2",
+        tpDesc: "Mengidentifikasi simbol dan makna sila pertama serta sila kedua Pancasila.",
+        q: "Contoh pengamalan sila pertama Pancasila di lingkungan sekolah adalah...",
+        options: [
+          "Berdoa bersama sebelum dan sesudah belajar dengan khusyuk",
+          "Berebut masuk kelas saat bel berbunyi",
+          "Menyontek pekerjaan teman saat ulangan",
+          "Memilih-milih teman berdasarkan daerah asalnya"
+        ],
+        answer: 0
+      },
+      {
+        id: 8, bab: "Bab 1: Pancasila sebagai Nilai Kehidupan", tp: "TP 1.2",
+        tpDesc: "Mengidentifikasi simbol dan makna sila pertama serta sila kedua Pancasila.",
+        q: "Simbol rantai emas pada perisai Garuda Pancasila melambangkan sila ke-...",
+        options: ["Satu", "Dua", "Tiga", "Empat"],
+        answer: 1
+      },
+      {
+        id: 9, bab: "Bab 1: Pancasila sebagai Nilai Kehidupan", tp: "TP 1.2",
+        tpDesc: "Mengidentifikasi simbol dan makna sila pertama serta sila kedua Pancasila.",
+        q: "Mata rantai berbentuk persegi dan lingkaran pada simbol sila kedua saling berkaitan melambangkan...",
+        options: [
+          "Kekuatan tentara dalam berperang",
+          "Hubungan manusia laki-laki dan perempuan yang saling membantu",
+          "Kekayaan hasil bumi Indonesia",
+          "Keindahan alam pegunungan"
+        ],
+        answer: 1
+      },
+      {
+        id: 10, bab: "Bab 1: Pancasila sebagai Nilai Kehidupan", tp: "TP 1.2",
+        tpDesc: "Mengidentifikasi simbol dan makna sila pertama serta sila kedua Pancasila.",
+        q: "Ketika melihat teman terjatuh saat bermain di halaman sekolah, sikap yang sesuai dengan sila kedua Pancasila adalah...",
+        options: [
+          "Menertawakannya bersama teman lain",
+          "Segera menolong dan mengantarnya ke ruang UKS",
+          "Pura-pura tidak melihat kejadian tersebut",
+          "Memarahinya karena berlari terlalu cepat"
+        ],
+        answer: 1
+      },
+      {
+        id: 11, bab: "Bab 1: Pancasila sebagai Nilai Kehidupan", tp: "TP 1.3",
+        tpDesc: "Menerapkan nilai sila ketiga, keempat, dan kelima dalam kehidupan sehari-hari.",
+        q: "Pohon beringin merupakan simbol dari sila ketiga Pancasila yang mengajarkan tentang pentingnya...",
+        options: [
+          "Persatuan dan kesatuan bangsa",
+          "Musyawarah memilih ketua kelas",
+          "Keadilan sosial bagi seluruh rakyat",
+          "Kebebasan beribadah sesuai agama"
+        ],
+        answer: 0
+      },
+      {
+        id: 12, bab: "Bab 1: Pancasila sebagai Nilai Kehidupan", tp: "TP 1.3",
+        tpDesc: "Menerapkan nilai sila ketiga, keempat, dan kelima dalam kehidupan sehari-hari.",
+        q: "Perilaku di bawah ini yang mencerminkan pengamalan sila ketiga Pancasila di sekolah adalah...",
+        options: [
+          "Mengikuti upacara bendera hari Senin dengan tertib",
+          "Hanya mau berteman dengan teman satu suku",
+          "Mengejek logat bahasa daerah teman",
+          "Membuat kegaduhan saat kerja kelompok"
+        ],
+        answer: 0
+      },
+      {
+        id: 13, bab: "Bab 1: Pancasila sebagai Nilai Kehidupan", tp: "TP 1.3",
+        tpDesc: "Menerapkan nilai sila ketiga, keempat, dan kelima dalam kehidupan sehari-hari.",
+        q: "Simbol kepala banteng melambangkan sila keempat Pancasila karena banteng merupakan hewan sosial yang suka...",
+        options: [
+          "Hidup menyendiri di hutan",
+          "Berkumpul dan bekerja sama dalam kelompok",
+          "Berpindah-pindah tempat sendirian",
+          "Tidur sepanjang hari"
+        ],
+        answer: 1
+      },
+      {
+        id: 14, bab: "Bab 1: Pancasila sebagai Nilai Kehidupan", tp: "TP 1.3",
+        tpDesc: "Menerapkan nilai sila ketiga, keempat, dan kelima dalam kehidupan sehari-hari.",
+        q: "Dalam musyawarah pemilihan ketua kelas IV, usulan Ahmad tidak terpilih menjadi keputusan bersama. Sikap Ahmad sebaiknya...",
+        options: [
+          "Marah dan keluar dari ruang kelas",
+          "Menerima hasil musyawarah dengan lapang dada",
+          "Menolak menaati ketua kelas yang terpilih",
+          "Memaksa teman mengubah hasil pemungutan suara"
+        ],
+        answer: 1
+      },
+      {
+        id: 15, bab: "Bab 1: Pancasila sebagai Nilai Kehidupan", tp: "TP 1.3",
+        tpDesc: "Menerapkan nilai sila ketiga, keempat, dan kelima dalam kehidupan sehari-hari.",
+        q: "Simbol padi dan kapas pada sila kelima Pancasila melambangkan kebutuhan dasar seluruh rakyat Indonesia, yaitu...",
+        options: [
+          "Perumahan dan kendaraan",
+          "Pangan (makanan) dan sandang (pakaian)",
+          "Pendidikan dan kesehatan",
+          "Olahraga dan hiburan"
+        ],
+        answer: 1
+      },
+      {
+        id: 16, bab: "Bab 1: Pancasila sebagai Nilai Kehidupan", tp: "TP 1.4",
+        tpDesc: "Meneladani karakter para perumus Pancasila dalam kehidupan sehari-hari.",
+        q: "Sikap hidup hemat, tidak boros uang saku, dan gemar menabung merupakan pengamalan Pancasila sila ke-...",
+        options: ["Dua", "Tiga", "Empat", "Lima"],
+        answer: 3
+      },
+      {
+        id: 17, bab: "Bab 1: Pancasila sebagai Nilai Kehidupan", tp: "TP 1.4",
+        tpDesc: "Meneladani karakter para perumus Pancasila dalam kehidupan sehari-hari.",
+        q: "Para tokoh perumus Pancasila memiliki perbedaan pendapat saat sidang BPUPKI, namun mereka tetap mengutamakan...",
+        options: [
+          "Kepentingan pribadi dan golongannya",
+          "Persatuan, kesatuan, dan kepentingan bangsa Indonesia",
+          "Keinginan untuk menang sendiri",
+          "Perdebatan tanpa mencari jalan keluar"
+        ],
+        answer: 1
+      },
+      {
+        id: 18, bab: "Bab 1: Pancasila sebagai Nilai Kehidupan", tp: "TP 1.4",
+        tpDesc: "Meneladani karakter para perumus Pancasila dalam kehidupan sehari-hari.",
+        q: "Membagi tugas piket kebersihan kelas secara adil kepada seluruh anggota regu tanpa membeda-bedakan adalah contoh penerapan sila ke-...",
+        options: ["Satu", "Tiga", "Empat", "Lima"],
+        answer: 3
+      },
+      {
+        id: 19, bab: "Bab 1: Pancasila sebagai Nilai Kehidupan", tp: "TP 1.4",
+        tpDesc: "Meneladani karakter para perumus Pancasila dalam kehidupan sehari-hari.",
+        q: "Apabila teman sedang menyampaikan pendapatnya saat diskusi kelompok di kelas, sikap kita yang baik adalah...",
+        options: [
+          "Memotong pembicaraannya sebelum selesai",
+          "Mendengarkan dengan sopan sampai ia selesai berbicara",
+          "Mengobrol sendiri dengan teman di sebelahnya",
+          "Menertawakan pendapatnya jika berbeda"
+        ],
+        answer: 1
+      },
+      {
+        id: 20, bab: "Bab 1: Pancasila sebagai Nilai Kehidupan", tp: "TP 1.4",
+        tpDesc: "Meneladani karakter para perumus Pancasila dalam kehidupan sehari-hari.",
+        q: "Gotong royong membersihkan lingkungan sekolah bersama-sama membuat pekerjaan berat menjadi...",
+        options: [
+          "Lebih lama selesainya",
+          "Terasa ringan dan cepat selesai",
+          "Membuat siswa bertengkar",
+          "Mengotori halaman sekolah"
+        ],
+        answer: 1
+      },
+
+      // BAB 2: KONSTITUSI DAN NORMA DI MASYARAKAT (20 SOAL)
+      {
+        id: 21, bab: "Bab 2: Konstitusi dan Norma di Masyarakat", tp: "TP 2.1",
+        tpDesc: "Mengenal macam-macam norma yang berlaku di masyarakat.",
+        q: "Aturan atau ketentuan yang mengikat warga kelompok dalam masyarakat dan dipakai sebagai panduan tingkah laku disebut...",
+        options: ["Norma", "Hobi", "Bakat", "Cita-cita"],
+        answer: 0
+      },
+      {
+        id: 22, bab: "Bab 2: Konstitusi dan Norma di Masyarakat", tp: "TP 2.1",
+        tpDesc: "Mengenal macam-macam norma yang berlaku di masyarakat.",
+        q: "Norma yang bersumber dari wahyu Tuhan Yang Maha Esa melalui kitab suci masing-masing agama disebut norma...",
+        options: ["Kesusilaan", "Kesopanan", "Agama", "Hukum"],
+        answer: 2
+      },
+      {
+        id: 23, bab: "Bab 2: Konstitusi dan Norma di Masyarakat", tp: "TP 2.1",
+        tpDesc: "Mengenal macam-macam norma yang berlaku di masyarakat.",
+        q: "Melaksanakan salat lima waktu tepat waktu dan berkata jujur merupakan contoh ketaatan terhadap norma...",
+        options: ["Agama", "Hukum lalu lintas", "Adat istiadat", "Olahraga"],
+        answer: 0
+      },
+      {
+        id: 24, bab: "Bab 2: Konstitusi dan Norma di Masyarakat", tp: "TP 2.1",
+        tpDesc: "Mengenal macam-macam norma yang berlaku di masyarakat.",
+        q: "Norma yang bersumber dari suara hati nurani manusia untuk membedakan perbuatan baik dan buruk disebut norma...",
+        options: ["Hukum", "Kesusilaan", "Kesopanan", "Agama"],
+        answer: 1
+      },
+      {
+        id: 25, bab: "Bab 2: Konstitusi dan Norma di Masyarakat", tp: "TP 2.1",
+        tpDesc: "Mengenal macam-macam norma yang berlaku di masyarakat.",
+        q: "Sanksi yang dirasakan seseorang apabila melanggar norma kesusilaan, seperti berbohong kepada orang tua, adalah...",
+        options: [
+          "Denda uang dari polisi",
+          "Perasaan bersalah, menyesal, dan gelisah di dalam hati",
+          "Hukuman penjara",
+          "Dikeluarkan dari warga negara"
+        ],
+        answer: 1
+      },
+      {
+        id: 26, bab: "Bab 2: Konstitusi dan Norma di Masyarakat", tp: "TP 2.2",
+        tpDesc: "Menerapkan norma kesopanan dan norma hukum di rumah, sekolah, serta masyarakat.",
+        q: "Norma yang berhubungan dengan pergaulan manusia dalam kehidupan sehari-hari seperti tata krama dan bertutur kata lembut disebut norma...",
+        options: ["Hukum", "Kesopanan", "Agama", "Kesusilaan"],
+        answer: 1
+      },
+      {
+        id: 27, bab: "Bab 2: Konstitusi dan Norma di Masyarakat", tp: "TP 2.2",
+        tpDesc: "Menerapkan norma kesopanan dan norma hukum di rumah, sekolah, serta masyarakat.",
+        q: "Contoh penerapan norma kesopanan ketika berjalan melewati bapak atau ibu guru di koridor sekolah adalah...",
+        options: [
+          "Berlari kencang tanpa menyapa",
+          "Mengucapkan salam, tersenyum, dan sedikit membungkukkan badan",
+          "Berteriak memanggil nama guru dari jauh",
+          "Menghalangi jalan guru"
+        ],
+        answer: 1
+      },
+      {
+        id: 28, bab: "Bab 2: Konstitusi dan Norma di Masyarakat", tp: "TP 2.2",
+        tpDesc: "Menerapkan norma kesopanan dan norma hukum di rumah, sekolah, serta masyarakat.",
+        q: "Norma yang dibuat oleh lembaga negara yang berwenang dan memiliki sanksi tegas serta memaksa adalah norma...",
+        options: ["Kesopanan", "Kesusilaan", "Hukum", "Kebiasaan"],
+        answer: 2
+      },
+      {
+        id: 29, bab: "Bab 2: Konstitusi dan Norma di Masyarakat", tp: "TP 2.2",
+        tpDesc: "Menerapkan norma kesopanan dan norma hukum di rumah, sekolah, serta masyarakat.",
+        q: "Contoh mematuhi norma hukum saat diantar orang tua ke sekolah menggunakan sepeda motor adalah...",
+        options: [
+          "Memakai helm standar SNI dan berhenti saat lampu merah menyala",
+          "Menerobos lampu lalu lintas agar cepat sampai",
+          "Berkendara di atas trotoar pejalan kaki",
+          "Tidak memakai helm karena jaraknya dekat"
+        ],
+        answer: 0
+      },
+      {
+        id: 30, bab: "Bab 2: Konstitusi dan Norma di Masyarakat", tp: "TP 2.2",
+        tpDesc: "Menerapkan norma kesopanan dan norma hukum di rumah, sekolah, serta masyarakat.",
+        q: "Tujuan utama dibuatnya berbagai aturan dan tata tertib di sekolah adalah agar...",
+        options: [
+          "Siswa merasa takut datang ke sekolah",
+          "Suasana belajar menjadi tertib, aman, nyaman, dan disiplin",
+          "Guru mudah memberikan hukuman",
+          "Siswa tidak boleh bermain saat istirahat"
+        ],
+        answer: 1
+      },
+      {
+        id: 31, bab: "Bab 2: Konstitusi dan Norma di Masyarakat", tp: "TP 2.3",
+        tpDesc: "Memahami keseimbangan antara hak dan kewajiban sebagai anak di rumah dan sekolah.",
+        q: "Segala sesuatu yang harus kita kerjakan atau laksanakan dengan penuh tanggung jawab disebut...",
+        options: ["Hak", "Kewajiban", "Hadiah", "Keinginan"],
+        answer: 1
+      },
+      {
+        id: 32, bab: "Bab 2: Konstitusi dan Norma di Masyarakat", tp: "TP 2.3",
+        tpDesc: "Memahami keseimbangan antara hak dan kewajiban sebagai anak di rumah dan sekolah.",
+        q: "Segala sesuatu yang layak kita terima atau dapatkan setelah melaksanakan kewajiban disebut...",
+        options: ["Kewajiban", "Tata tertib", "Hak", "Sanksi"],
+        answer: 2
+      },
+      {
+        id: 33, bab: "Bab 2: Konstitusi dan Norma di Masyarakat", tp: "TP 2.3",
+        tpDesc: "Memahami keseimbangan antara hak dan kewajiban sebagai anak di rumah dan sekolah.",
+        q: "Di bawah ini yang merupakan contoh hak seorang siswa di sekolah adalah...",
+        options: [
+          "Membersihkan papan tulis sebelum pelajaran dimulai",
+          "Mendapatkan bimbingan pelajaran dan kasih sayang dari guru",
+          "Memakai seragam sekolah sesuai jadwal",
+          "Datang ke sekolah tepat waktu sebelum bel berbunyi"
+        ],
+        answer: 1
+      },
+      {
+        id: 34, bab: "Bab 2: Konstitusi dan Norma di Masyarakat", tp: "TP 2.3",
+        tpDesc: "Memahami keseimbangan antara hak dan kewajiban sebagai anak di rumah dan sekolah.",
+        q: "Contoh kewajiban anak di lingkungan rumah adalah...",
+        options: [
+          "Mendapatkan makanan bergizi setiap hari",
+          "Membantu orang tua merapikan tempat tidur dan belajar dengan rajin",
+          "Mendapatkan waktu bermain setelah belajar",
+          "Memperoleh perlindungan dari ayah dan ibu"
+        ],
+        answer: 1
+      },
+      {
+        id: 35, bab: "Bab 2: Konstitusi dan Norma di Masyarakat", tp: "TP 2.3",
+        tpDesc: "Memahami keseimbangan antara hak dan kewajiban sebagai anak di rumah dan sekolah.",
+        q: "Pelaksanaan hak dan kewajiban dalam kehidupan sehari-hari harus dilakukan secara...",
+        options: [
+          "Menuntut hak terlebih dahulu tanpa mau melakukan kewajiban",
+          "Seimbang dengan mendahulukan kewajiban sebelum menuntut hak",
+          "Melakukan kewajiban hanya jika diberi hadiah",
+          "Mengabaikan kewajiban di sekolah"
+        ],
+        answer: 1
+      },
+      {
+        id: 36, bab: "Bab 2: Konstitusi dan Norma di Masyarakat", tp: "TP 2.4",
+        tpDesc: "Mengenal konstitusi negara (UUD 1945) dan proses musyawarah mufakat.",
+        q: "Hukum dasar tertulis yang menjadi konstitusi tertinggi di Negara Kesatuan Republik Indonesia adalah...",
+        options: [
+          "Undang-Undang Dasar Negara Republik Indonesia Tahun 1945",
+          "Peraturan Tata Tertib Sekolah",
+          "Keputusan Ketua RT",
+          "Peraturan Lalu Lintas"
+        ],
+        answer: 0
+      },
+      {
+        id: 37, bab: "Bab 2: Konstitusi dan Norma di Masyarakat", tp: "TP 2.4",
+        tpDesc: "Mengenal konstitusi negara (UUD 1945) dan proses musyawarah mufakat.",
+        q: "Pembahasan bersama untuk mencapai keputusan penyelesaian masalah bersama disebut...",
+        options: ["Pertengkaran", "Musyawarah", "Persaingan", "Perdebatan"],
+        answer: 1
+      },
+      {
+        id: 38, bab: "Bab 2: Konstitusi dan Norma di Masyarakat", tp: "TP 2.4",
+        tpDesc: "Mengenal konstitusi negara (UUD 1945) dan proses musyawarah mufakat.",
+        q: "Apabila dalam musyawarah tidak tercapai kata mufakat meskipun sudah berdiskusi lama, cara pengambilan keputusan berikutnya adalah...",
+        options: [
+          "Membubarkan pertemuan tanpa hasil",
+          "Pemungutan suara terbanyak (voting)",
+          "Keputusan ditentukan oleh satu orang saja",
+          "Mengundi dengan melempar koin"
+        ],
+        answer: 1
+      },
+      {
+        id: 39, bab: "Bab 2: Konstitusi dan Norma di Masyarakat", tp: "TP 2.4",
+        tpDesc: "Mengenal konstitusi negara (UUD 1945) dan proses musyawarah mufakat.",
+        q: "Setelah kesepakatan aturan kelas dibuat bersama melalui musyawarah, maka aturan tersebut wajib ditaati oleh...",
+        options: [
+          "Ketua kelas saja",
+          "Seluruh anggota kelas tanpa terkecuali",
+          "Siswa yang setuju saja",
+          "Guru kelas saja"
+        ],
+        answer: 1
+      },
+      {
+        id: 40, bab: "Bab 2: Konstitusi dan Norma di Masyarakat", tp: "TP 2.4",
+        tpDesc: "Mengenal konstitusi negara (UUD 1945) dan proses musyawarah mufakat.",
+        q: "Manfaat membiasakan diri mematuhi norma dan aturan sejak usia sekolah dasar adalah...",
+        options: [
+          "Menumbuhkan karakter disiplin, tanggung jawab, dan hidup rukun",
+          "Membuat kita sulit bergaul dengan teman",
+          "Menghilangkan kebebasan bermain",
+          "Membuat aturan menjadi tidak berguna"
+        ],
+        answer: 0
+      }
+    ];
+
+    // =========================================================================
+    // 3. DAFTAR RESMI 28 NAMA SISWA & KONFIGURASI MATA PELAJARAN
+    // =========================================================================
+    const ALLOWED_STUDENTS = [
+      "Arsyila Romeesa Farzana",
+      "Khanza Azkiya",
+      "Nur Amira Najmi",
+      "Maulida Fitria",
+      "Muhammad Abidzar Alghifari",
+      "Muhammad Aliff Ali",
+      "Muhammad Arya",
+      "Muhammad Ashim",
+      "Muhammad Husin Al Ghojali",
+      "Muhammad Nauval Setiawan",
+      "Muhammad Nizam Akbar",
+      "Muhammad Rezky Firdaus",
+      "Muhammad Risky",
+      "Muhammad Wafi",
+      "Novita Syaifi",
+      "Nur Asyifa",
+      "Purnama Inayah",
+      "Sa'da Alifa",
+      "Siti Fatimah",
+      "Syarifah Haibatul Azizah",
+      "Ulvi Aidi Ariani",
+      "Uswatun Hasanah",
+      "Vanya Nazila",
+      "Ikhwan Faris",
+      "Ibrahim Amjad Assegaf",
+      "Fadhil Abbas",
+      "Naina Faira",
+      "Ahmad Rizkianor"
+    ];
+
+    const SUBJECTS_CONFIG = {
+      PJOK: {
+        key: "PJOK",
+        name: "PJOK Kelas 4",
+        icon: "⚽",
+        materiLabel: "Bab 1 – Bab 3",
+        questions: pjokQuestionsBank,
+        tpTitle: "Cakupan Tujuan Pembelajaran (TP) PJOK:",
+        tpBullets: [
+          "Bab 1 (Ayo, Bergerak!): Variasi gerak dasar lokomotor, nonlokomotor, dan manipulatif.",
+          "Bab 2 (Ayo, Bermain!): Keterampilan gerak dalam permainan invasi, net, dan lapangan.",
+          "Bab 3 (Ayo, Merangkai Gerak!): Pola gerak dominan bertumpu, keseimbangan, bergantung, dan berputar."
+        ]
+      },
+      PANCASILA: {
+        key: "PANCASILA",
+        name: "Pendidikan Pancasila",
+        icon: "🦅",
+        materiLabel: "Bab 1 & Bab 2",
+        questions: pancasilaQuestionsBank,
+        tpTitle: "Cakupan Tujuan Pembelajaran (TP) Pendidikan Pancasila:",
+        tpBullets: [
+          "Bab 1 (Pancasila sebagai Nilai Kehidupan): Sejarah perumusan, simbol sila, dan pengamalan nilai Pancasila.",
+          "Bab 2 (Konstitusi dan Norma di Masyarakat): Macam norma, hak & kewajiban, UUD 1945, dan musyawarah."
+        ]
+      }
+    };
+
+    // State Ujian Terpadu
+    let selectedSubjectKey = "PJOK";
+    let activeQuestions = pjokQuestionsBank;
+    let currentQuestionIndex = 0;
+    let userAnswers = new Array(40).fill(null);
+    let flaggedQuestions = new Array(40).fill(false);
+    let studentName = "";
+    let examStartTime = null;
+    let timerInterval = null;
+    const TOTAL_EXAM_SECONDS = 120 * 60; // 120 menit
+    let remainingSeconds = TOTAL_EXAM_SECONDS;
+    let studentReports = [];
+    let teacherSubjectFilter = "ALL";
+
+    // Inisialisasi datalist 28 nama siswa & default mapel saat halaman dibuka
+    document.addEventListener("DOMContentLoaded", () => {
+      const datalist = document.getElementById("registered-students-list");
+      if (datalist) {
+        datalist.innerHTML = ALLOWED_STUDENTS.map(name => `<option value="${name}">`).join("");
+      }
+      selectSubject("PJOK", true);
+    });
+
+    function normalizeName(str) {
+      return (str || "")
+        .trim()
+        .replace(/\s+/g, " ")
+        .replace(/[’‘`]/g, "'")
+        .toLowerCase();
+    }
+
+    function findRegisteredStudent(input) {
+      const norm = normalizeName(input);
+      if (!norm) return null;
+      return ALLOWED_STUDENTS.find(s => normalizeName(s) === norm) || null;
+    }
+
+    // --- PEMILIHAN MATA PELAJARAN DI HALAMAN AWAL ---
+    function selectSubject(subjectKey, silent = false) {
+      if (!SUBJECTS_CONFIG[subjectKey]) return;
+      selectedSubjectKey = subjectKey;
+      const cfg = SUBJECTS_CONFIG[subjectKey];
+      activeQuestions = cfg.questions;
+
+      if (!silent) {
+        playTone(587.33, "sine", 0.08);
+      }
+
+      const btnPjok = document.getElementById("select-subj-pjok");
+      const btnPancasila = document.getElementById("select-subj-pancasila");
+      const badgePancasila = document.getElementById("badge-subj-pancasila");
+
+      if (subjectKey === "PJOK") {
+        btnPjok.className = "p-4 rounded-2xl border-4 border-orange-500 bg-gradient-to-br from-orange-50 to-amber-100 text-left transition transform hover:scale-[1.01] shadow-md flex items-center gap-3.5 cursor-pointer";
+        btnPjok.querySelector("span").className = "inline-block text-[10px] font-extrabold uppercase px-2 py-0.5 rounded-full bg-orange-500 text-white";
+        btnPjok.querySelector("span").textContent = "Dipilih";
+        btnPjok.querySelector("h3").className = "font-bold text-base text-orange-950 leading-tight mt-0.5";
+
+        btnPancasila.className = "p-4 rounded-2xl border-2 border-amber-200 hover:border-orange-400 bg-amber-50/40 text-left transition transform hover:scale-[1.01] flex items-center gap-3.5 cursor-pointer";
+        badgePancasila.className = "inline-block text-[10px] font-bold uppercase px-2 py-0.5 rounded-full bg-amber-200 text-orange-900";
+        badgePancasila.textContent = "Klik Pilih";
+        btnPancasila.querySelector("h3").className = "font-bold text-base text-slate-800 leading-tight mt-0.5";
+      } else {
+        btnPancasila.className = "p-4 rounded-2xl border-4 border-orange-500 bg-gradient-to-br from-orange-50 to-amber-100 text-left transition transform hover:scale-[1.01] shadow-md flex items-center gap-3.5 cursor-pointer";
+        badgePancasila.className = "inline-block text-[10px] font-extrabold uppercase px-2 py-0.5 rounded-full bg-orange-500 text-white";
+        badgePancasila.textContent = "Dipilih";
+        btnPancasila.querySelector("h3").className = "font-bold text-base text-orange-950 leading-tight mt-0.5";
+
+        btnPjok.className = "p-4 rounded-2xl border-2 border-amber-200 hover:border-orange-400 bg-amber-50/40 text-left transition transform hover:scale-[1.01] flex items-center gap-3.5 cursor-pointer";
+        btnPjok.querySelector("span").className = "inline-block text-[10px] font-bold uppercase px-2 py-0.5 rounded-full bg-amber-200 text-orange-900";
+        btnPjok.querySelector("span").textContent = "Klik Pilih";
+        btnPjok.querySelector("h3").className = "font-bold text-base text-slate-800 leading-tight mt-0.5";
+      }
+
+      document.getElementById("info-materi-uji").textContent = cfg.materiLabel;
+      document.getElementById("tp-box-title").textContent = cfg.tpTitle;
+      document.getElementById("tp-box-list").innerHTML = cfg.tpBullets.map(b => `<li>${b}</li>`).join("");
+      document.getElementById("btn-start-label").textContent = `Mulai Ujian ${cfg.name} (120 Menit)`;
+    }
+
+    // --- PERPINDAHAN TAMPILAN (VIEW SWITCHER) ---
+    function switchView(viewId) {
+      ["view-login", "view-exam", "view-result", "view-teacher"].forEach(id => {
+        const el = document.getElementById(id);
+        if (el) el.classList.add("hidden");
+      });
+      const target = document.getElementById(viewId);
+      if (target) target.classList.remove("hidden");
+
+      const headerExamInfo = document.getElementById("header-exam-info");
+      const headerLoginActions = document.getElementById("header-login-actions");
+      if (viewId === "view-exam") {
+        headerExamInfo.classList.remove("hidden");
+        headerLoginActions.classList.add("hidden");
+      } else {
+        headerExamInfo.classList.add("hidden");
+        headerLoginActions.classList.remove("hidden");
+      }
+
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+
+    // --- MULAI UJIAN ---
+    function startExam(event) {
+      event.preventDefault();
+      const rawInput = document.getElementById("student-name").value;
+      const officialName = findRegisteredStudent(rawInput);
+
+      if (!officialName) {
+        playTone(220, "sawtooth", 0.14);
+        openModal({
+          title: "Nama Tidak Terdaftar",
+          message: "Maaf, nama yang kamu ketik tidak ditemukan dalam daftar resmi <strong>28 siswa Kelas IV</strong> SDI Hidayatullah Taman Hudaya. Silakan pilih namamu dari daftar yang muncul.",
+          icon: "fa-user-times",
+          iconBg: "bg-rose-100 text-rose-600",
+          buttons: [
+            { text: "Periksa Nama", class: "bg-orange-600 hover:bg-orange-700 text-white", onClick: closeModal }
+          ]
+        });
+        return;
+      }
+
+      const cfg = SUBJECTS_CONFIG[selectedSubjectKey];
+      studentName = officialName;
+      activeQuestions = cfg.questions;
+      currentQuestionIndex = 0;
+      userAnswers = new Array(activeQuestions.length).fill(null);
+      flaggedQuestions = new Array(activeQuestions.length).fill(false);
+      remainingSeconds = TOTAL_EXAM_SECONDS;
+      examStartTime = Date.now();
+
+      document.getElementById("display-student-name").textContent = `${studentName} (${cfg.name})`;
+      document.getElementById("header-subject-subtitle").textContent = `Sedang Berlangsung • ${cfg.name} (${cfg.materiLabel})`;
+
+      playTone(523.25, "sine", 0.1);
+      setTimeout(() => playTone(659.25, "sine", 0.12), 100);
+
+      switchView("view-exam");
+      renderQuestionGrid();
+      renderQuestion();
+      startTimer();
+    }
+
+    // --- TIMER 120 MENIT ---
+    function startTimer() {
+      if (timerInterval) clearInterval(timerInterval);
+      updateTimerDisplay();
+      timerInterval = setInterval(() => {
+        remainingSeconds--;
+        updateTimerDisplay();
+        if (remainingSeconds <= 0) {
+          clearInterval(timerInterval);
+          timerInterval = null;
+          finishExam(true);
+        }
+      }, 1000);
+    }
+
+    function updateTimerDisplay() {
+      const mins = Math.floor(Math.max(0, remainingSeconds) / 60);
+      const secs = Math.max(0, remainingSeconds) % 60;
+      const formatted = `${String(mins).padStart(2, "0")}:${String(secs).padStart(2, "0")}`;
+      const display = document.getElementById("timer-display");
+      if (display) display.textContent = formatted;
+    }
+
+    // --- RENDER SOAL & NAVIGASI ---
+    function renderQuestion() {
+      const q = activeQuestions[currentQuestionIndex];
+      document.getElementById("current-q-num").textContent = currentQuestionIndex + 1;
+      document.getElementById("current-q-bab").textContent = q.bab;
+      document.getElementById("current-q-tp").textContent = q.tp;
+      document.getElementById("question-text").textContent = q.q;
+
+      const letters = ["A", "B", "C", "D"];
+      const container = document.getElementById("options-container");
+      container.innerHTML = "";
+
+      q.options.forEach((optText, idx) => {
+        const isSelected = userAnswers[currentQuestionIndex] === idx;
+        const btn = document.createElement("button");
+        btn.type = "button";
+        btn.onclick = () => selectAnswer(idx);
+        btn.className = isSelected
+          ? "w-full text-left p-4 rounded-2xl border-3 border-orange-500 bg-gradient-to-r from-orange-50 to-amber-100 shadow-sm flex items-start gap-3.5 transition"
+          : "w-full text-left p-4 rounded-2xl border-2 border-amber-200 hover:border-orange-400 hover:bg-amber-50/60 bg-white flex items-start gap-3.5 transition";
+
+        btn.innerHTML = `
+          <span class="w-8 h-8 rounded-xl flex items-center justify-center font-extrabold text-sm shrink-0 ${
+            isSelected ? "bg-orange-500 text-white shadow" : "bg-amber-100 text-orange-950 border border-amber-300"
+          }">
+            ${letters[idx]}
+          </span>
+          <span class="font-semibold text-sm sm:text-base ${isSelected ? "text-orange-950 font-bold" : "text-slate-700"} pt-1">
+            ${optText}
+          </span>
+        `;
+        container.appendChild(btn);
+      });
+
+      document.getElementById("btn-prev").disabled = currentQuestionIndex === 0;
+      const btnNext = document.getElementById("btn-next");
+      if (currentQuestionIndex === activeQuestions.length - 1) {
+        btnNext.innerHTML = `<span>Selesai</span> <i class="fas fa-check-circle"></i>`;
+        btnNext.onclick = confirmFinishExam;
+      } else {
+        btnNext.innerHTML = `<span>Selanjutnya</span> <i class="fas fa-chevron-right"></i>`;
+        btnNext.onclick = nextQuestion;
+      }
+
+      const flagText = document.getElementById("flag-text");
+      flagText.textContent = flaggedQuestions[currentQuestionIndex] ? "Batal Ragu" : "Ragu-ragu";
+
+      updateAnsweredBadge();
+      renderQuestionGrid();
+    }
+
+    function selectAnswer(optIndex) {
+      playTone(659.25, "triangle", 0.08);
+      userAnswers[currentQuestionIndex] = optIndex;
+      renderQuestion();
+    }
+
+    function toggleFlag() {
+      playTone(440, "sine", 0.07);
+      flaggedQuestions[currentQuestionIndex] = !flaggedQuestions[currentQuestionIndex];
+      renderQuestion();
+    }
+
+    function prevQuestion() {
+      if (currentQuestionIndex > 0) {
+        playTone(493.88, "sine", 0.06);
+        currentQuestionIndex--;
+        renderQuestion();
+      }
+    }
+
+    function nextQuestion() {
+      if (currentQuestionIndex < activeQuestions.length - 1) {
+        playTone(523.25, "sine", 0.06);
+        currentQuestionIndex++;
+        renderQuestion();
+      }
+    }
+
+    function jumpToQuestion(idx) {
+      playTone(523.25, "sine", 0.05);
+      currentQuestionIndex = idx;
+      renderQuestion();
+    }
+
+    function updateAnsweredBadge() {
+      const answered = userAnswers.filter(a => a !== null).length;
+      document.getElementById("answered-count").textContent = `${answered} / ${activeQuestions.length} Dijawab`;
+    }
+
+    function renderQuestionGrid() {
+      const grid = document.getElementById("question-grid");
+      grid.innerHTML = "";
+      activeQuestions.forEach((_, idx) => {
+        const isCurrent = idx === currentQuestionIndex;
+        const isAnswered = userAnswers[idx] !== null;
+        const isFlagged = flaggedQuestions[idx];
+
+        let cls = "h-10 rounded-xl font-extrabold text-xs transition flex items-center justify-center ";
+        if (isCurrent) {
+          cls += "ring-2 ring-orange-600 ring-offset-1 ";
+        }
+        if (isFlagged) {
+          cls += "bg-yellow-300 text-orange-950 border border-amber-400";
+        } else if (isAnswered) {
+          cls += "bg-orange-500 text-white shadow-sm";
+        } else {
+          cls += "bg-amber-50 text-slate-700 border border-amber-200 hover:bg-amber-100";
+        }
+
+        const btn = document.createElement("button");
+        btn.type = "button";
+        btn.className = cls;
+        btn.textContent = idx + 1;
+        btn.onclick = () => jumpToQuestion(idx);
+        grid.appendChild(btn);
+      });
+    }
+
+    // --- KONFIRMASI & PENILAIAN UJIAN ---
+    function confirmFinishExam() {
+      const answered = userAnswers.filter(a => a !== null).length;
+      const unanswered = activeQuestions.length - answered;
+      const flagged = flaggedQuestions.filter(Boolean).length;
+
+      openModal({
+        title: "Kumpulkan Jawaban Ujian?",
+        message: `Dijawab: <strong>${answered} soal</strong> • Belum dijawab: <strong>${unanswered} soal</strong> • Ragu-ragu: <strong>${flagged} soal</strong>.<br>Apakah kamu yakin ingin menyelesaikan ujian sekarang?`,
+        icon: "fa-paper-plane",
+        iconBg: "bg-amber-100 text-orange-600",
+        buttons: [
+          { text: "Periksa Lagi", class: "bg-amber-100 hover:bg-amber-200 text-orange-950", onClick: closeModal },
+          { text: "Ya, Kumpulkan!", class: "bg-orange-600 hover:bg-orange-700 text-white", onClick: () => { closeModal(); finishExam(false); } }
+        ]
+      });
+    }
+
+    function finishExam(isTimeout = false) {
+      if (timerInterval) {
+        clearInterval(timerInterval);
+        timerInterval = null;
+      }
+
+      playTone(523.25, "sine", 0.1);
+      setTimeout(() => playTone(659.25, "sine", 0.1), 100);
+      setTimeout(() => playTone(783.99, "sine", 0.2), 200);
+
+      let correct = 0;
+      const tpScores = {};
+      const tpTotals = {};
+      const tpDescriptions = {};
+
+      activeQuestions.forEach((q, idx) => {
+        tpTotals[q.tp] = (tpTotals[q.tp] || 0) + 1;
+        tpDescriptions[q.tp] = q.tpDesc;
+        if (!tpScores[q.tp]) tpScores[q.tp] = 0;
+
+        if (userAnswers[idx] === q.answer) {
+          correct++;
+          tpScores[q.tp]++;
+        }
+      });
+
+      const wrong = activeQuestions.length - correct;
+      const score = Math.round((correct / activeQuestions.length) * 100);
+
+      let predicate = "Perlu Bimbingan";
+      if (score >= 90) predicate = "Sangat Baik";
+      else if (score >= 75) predicate = "Baik";
+      else if (score >= 60) predicate = "Cukup";
+
+      const elapsedSec = Math.max(1, TOTAL_EXAM_SECONDS - remainingSeconds);
+      const durMin = Math.floor(elapsedSec / 60);
+      const durSec = elapsedSec % 60;
+      const durationStr = `${durMin} menit ${durSec} detik`;
+
+      const now = new Date();
+      const dateStr = now.toLocaleDateString("id-ID", { day: "2-digit", month: "short", year: "numeric" }) +
+        " • " + now.toLocaleTimeString("id-ID", { hour: "2-digit", minute: "2-digit" });
+
+      const cfg = SUBJECTS_CONFIG[selectedSubjectKey];
+
+      // Simpan ke rekap wali murid / guru
+      studentReports.unshift({
+        id: "RPT-" + Date.now(),
+        name: studentName,
+        subjectKey: cfg.key,
+        subjectName: cfg.name,
+        subjectIcon: cfg.icon,
+        date: dateStr,
+        duration: durationStr,
+        correct,
+        wrong,
+        score,
+        predicate,
+        tpScores,
+        tpTotals,
+        answers: [...userAnswers],
+        questionsSnapshot: [...activeQuestions]
+      });
+
+      // Tampilkan di halaman hasil siswa
+      document.getElementById("res-subject-title").textContent = `Mata Pelajaran: ${cfg.name} (${cfg.materiLabel}) • Kelas IV`;
+      document.getElementById("res-name").textContent = studentName;
+      document.getElementById("res-duration").textContent = durationStr;
+      document.getElementById("res-date").textContent = dateStr;
+      document.getElementById("res-score").textContent = score;
+      document.getElementById("res-predicate").textContent = predicate;
+      document.getElementById("res-correct").textContent = correct;
+      document.getElementById("res-wrong").textContent = wrong;
+
+      const tpBreakdown = document.getElementById("res-tp-breakdown");
+      tpBreakdown.innerHTML = Object.keys(tpTotals).map(tpCode => {
+        const c = tpScores[tpCode] || 0;
+        const t = tpTotals[tpCode];
+        const pct = Math.round((c / t) * 100);
+        return `
+          <div class="bg-amber-50/70 p-3.5 rounded-2xl border border-amber-200">
+            <div class="flex items-center justify-between text-xs font-extrabold text-orange-950 mb-1">
+              <span>${tpCode}: ${tpDescriptions[tpCode]}</span>
+              <span class="bg-white px-2.5 py-0.5 rounded-lg border border-amber-300 text-orange-700">${c}/${t} (${pct}%)</span>
+            </div>
+            <div class="w-full h-2.5 bg-amber-200/70 rounded-full overflow-hidden">
+              <div class="h-full bg-gradient-to-r from-orange-500 to-amber-500 rounded-full" style="width: ${pct}%"></div>
+            </div>
+          </div>
+        `;
+      }).join("");
+
+      switchView("view-result");
+    }
+
     function backToHome() {
       document.getElementById('student-name').value = '';
       document.getElementById('header-subject-subtitle').textContent = 'Evaluasi Pembelajaran Terpadu • PJOK & Pendidikan Pancasila Kelas IV';
